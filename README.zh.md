@@ -897,6 +897,7 @@ dsh plugin --profile web add dshmarket
 - [liujia-io/dsh-image-picker](https://github.com/liujia-io/dsh-image-picker) — 在会话输入框添加 📎 选图按钮，通过系统文件选择器选取参考图并注入官方附件管线（缩略图、数量与大小校验、随消息上传），绕开拖拽环境问题。
 - [liuming-dev/dsh-plugins#annotation-rewind-scroll](https://github.com/liuming-dev/dsh-plugins/tree/main/annotation-rewind-scroll) — 为回复和文档添加随下一条消息发送的注释，编辑历史用户消息并从该处重新执行，使用快捷键浏览用户消息或在输入框调出历史输入。
 - [liumorrisclaw/dsh-composer-input-history](https://github.com/liumorrisclaw/dsh-composer-input-history) — 在 DSH 输入框用 ↑ 调回本会话已发送的消息；↓ 前翻并恢复你正在写的草稿，再按一次 ↓ 丢弃草稿、清空输入框。
+- [liupengprivate-blip/dsh-baidu](https://github.com/liupengprivate-blip/dsh-baidu) — DSH 侧栏里的模拟搜索页：调用本地搜索接口，列出前 10 条结果。
 - [liushQAQ/dsh-prompt-optimizer](https://github.com/liushQAQ/dsh-prompt-optimizer) — 提示词智能优化与思考强度动态自适应插件，支持会话输入框胶囊控制条、DSH已配置/自定义第三方双模型来源、一键撤销与重新优化及原生配置面板。
 - [liushuchang-2012/dsh-boot-splash](https://github.com/liushuchang-2012/dsh-boot-splash) — 网页界面的启动动画：页面加载时蓝鲸由下往上被墨色淹没成黑鲸，随后左移、从身后拉出 | deepseek HARNESS 字标，再把窗口交给应用。
 - [liuzwZYW/dsh-pwa-ui](https://github.com/liuzwZYW/dsh-pwa-ui) — 通过 Window Controls Overlay 让已安装的 dsh Web 应用拥有原生观感的窗口标题栏——清单路由带 display_override 返回，应用自身的侧边栏品牌行与会话 header 成为拖拽区，应用自身右侧控件自动让开浏览器标题栏 chrome。
@@ -1999,6 +2000,7 @@ dsh plugin --profile web add dshmarket
 - [Pingze-github/dsh-cost-audit](https://github.com/Pingze-github/dsh-cost-audit) — 以 harness 自己的统计形态显示每轮与会话的 token 与人民币花费，提供 1/7/30 天窗口的全账号账单与「单位工作量花费」趋势，并给出会在你采纳后重新测量效果的建议。
 - [PlusQi/dsh-tokstats](https://github.com/PlusQi/dsh-tokstats) — 可能有用的 DSH token 用量插件，跨会话统计 token 都花在哪儿了：用量总览四项指标、上下文长度分布、近 12 周热力图与按周趋势，工作区与模型排行；另附有发送前 token 预告和输入草稿优化功能。
 - [PolinniZhong/dsh-personal-center](https://github.com/PolinniZhong/dsh-personal-center) — DeepSeek Harness 个人中心：跨会话用量统计（按供应商/模型分别统计，自动读取已配置模型）、按模型成本估算、全局自定义指令、数据驱动的桌面宠物（位图/矢量皮肤）与会话状态概览，纯本地离线运行。
+- [pythoner1984/dsh-plugin-openai-quota](https://github.com/pythoner1984/dsh-plugin-openai-quota) — 在 DSH 窗口顶部边缘用一行提示显示 DeepSeek 余额、ChatGPT/Codex 五小时与每周剩余额度及其重置时间、剩余额度重置卡数量与最近到期时间；重置卡那一段是链接，会用浏览器打开 ChatGPT 使用情况页。
 - [qiyuexue-xiyu/dsh-tool-cost-hint](https://github.com/qiyuexue-xiyu/dsh-tool-cost-hint) — 每轮对话结束后在回复底部追加一行可折叠提示：列出这一轮调用了哪些工具、各几次、每个工具往上下文注入了多少 token（输入加输出），点开可看逐工具明细。
 - [qwert702/dsh-token-viewer](https://github.com/qwert702/dsh-token-viewer) — dsh 网页端 CC Switch 风格 Token 消耗统计：按请求的用量日志、真实消耗 Hero、按请求提交时间分桶的趋势图、按模型峰谷牌价计费、项目/模型统计与账户余额。
 - [Rannist/balance-dsh](https://github.com/Rannist/balance-dsh) — 在侧边栏底部和输入框上方显示你的 DeepSeek 账户余额与当前会话 token 及费用消耗，支持高峰/空闲峰谷计费与子代理消耗统计。
