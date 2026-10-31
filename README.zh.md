@@ -3546,7 +3546,7 @@ dsh plugin --profile web add dshmarket
 - [yyfdfsyyf-source/dsh-context-fold](https://github.com/yyfdfsyyf-source/dsh-context-fold) — 把超长工具结果折叠为落盘副本并保留 head/tail 标记，为 compaction 摘要建立可检索账本，并按项目作用域抽取跨会话记忆；被折叠的内容可通过一次工具调用原样取回。
 - [zaizaizhao/dsh-branchmark#dsh-branchmark](https://github.com/zaizaizhao/dsh-branchmark/tree/main/packages/bundle) — Vibe Coding 时，如果突然想到另一个问题，或者看到一段以后还会用到的回答，可以先保存下来、在 Side Chat 里快速问清楚，或另开一个相关会话继续研究，不打断当前任务的开发思路和注意力。
 - [zangxx66/dsh-prompt-setting#dsh-prompt-setting](https://github.com/zangxx66/dsh-prompt-setting/tree/main/packages/dsh-prompt-setting) — DeepSeek Harness 默认 System Prompt 管理插件：在 Web GUI「设置」里浏览、检索并覆盖最终装配进每轮会话的系统提示词。
-- [Zcc50/dsh-workspace-frontend](https://github.com/Zcc50/dsh-workspace-frontend) — 把左侧栏重做成「工作区 → 分组 → 会话」树，支持拖拽归组、行内状态环与上下文环，以及可拖拽调宽的侧栏把手；会话花费列依赖 dsh-claude-style 插件，未安装时显示 —。
+- [DSH 重修整合包](https://github.com/Zcc50/dsh-rebuild) — DSH 环境一站式整合包：根目录是可从市场一键安装/更新的工作区美化插件，pack/ 子目录是任务列表、编码兼容、LSP/审查、视觉与白皮书的完整安装器。
 - [zchuxi/dsh-restart-task](https://github.com/zchuxi/dsh-restart-task) — 修复被打断的 DSH 回合：放大产品自带的重试预算并把等待渲染成同一步内的实时倒计时，输出被截断时在同一轮内续写，回合已结束时可选地新开一轮继续；输入框为空时把「继续」交给发送键。
 - [zdjmrq/dsh-compact-control](https://github.com/zdjmrq/dsh-compact-control) — 调整 DSH 原生自动上下文压缩的触发阈值：在插件管理器的插件页面用滑块设置上下文占满模型窗口多少百分比时压缩（1%–100%，默认 80%，方向键可 1% 微调）；阈值调低时保留的最近历史预算会随之缩小，以免提前压缩被抵消，压缩本身仍由原生引擎执行。
 - [zenghang25/dsh-session-delete](https://github.com/zenghang25/dsh-session-delete) — 在 DSH 侧栏会话菜单中加入一键「删除会话」：把会话日志与该对话的 .dsh-sessions 产出目录移入 Windows 回收站，没有确认弹窗。
@@ -5605,6 +5605,7 @@ dsh plugin --profile web add dshmarket
 - [hairyf/dsh-office-kit](https://github.com/hairyf/dsh-office-kit) — 通过 `/documents`、`/pdf`、`/presentations`、`/spreadsheets` 创建、读取与编辑 DOCX、PDF、PPTX、XLSX，把页面渲染出来核对排版，并将侧边栏预览中的选区变成发给会话的修改要求。需 Python 3.10–3.13。
 - [hanzhangzzz/dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) — 把 DSH 会话中的文章整理成会话内的 Excalidraw 画布：Agent 用 diagram_create 起草结构，你在画布中修改文字、节点和布局并自动保存，可导出 PNG、SVG 或 .excalidraw，Agent 再用 diagram_read 读回你改过的画布。0.6 新增大型三层分类树的可编辑总览与完整明细索引。
 - [HaoKuo/dsh-notebook-studio](https://github.com/HaoKuo/dsh-notebook-studio) — 把最多 30 篇上传的 PDF 文献变成提示词驱动的文献综述、关键信息提取、研究思路与研究设计，并导出带页码引用的报告（DOCX/PDF）或演示文稿（PPTX/PDF）。
+- [HaoKuo/DSH-Paper-DeepRead](https://github.com/HaoKuo/DSH-Paper-DeepRead) — 把文献精读库与 paper-deepread-html 精读技能打包成 dsh 插件：侧边栏浏览交互式报告、上传 PDF 到托管书库、由 Agent 或可选接入的站点自动精读 worker 精读、管理或重建书库；提供 paper_deepread、paper_deepread_uploads、paper_deepread_reports 三个模型工具。
 - [HiSeax/dsh-agent-outputs-reader](https://github.com/HiSeax/dsh-agent-outputs-reader) — agent 产出文件的浮层阅读器：Markdown 渲染、PDF 面板预览、DOCX/XLSX/PPTX 文本提取与回复末尾文件 chips，支持搜索、大纲与位置记忆。
 - [huangfuren/dsh-outline](https://github.com/huangfuren/dsh-outline) — 在 DSH 对话中搜索、读取并安全读写用户自己的 Outline 知识库文档，写操作受白名单保护与审批约束。
 - [huangxicheng1/blog-manage](https://github.com/huangxicheng1/blog-manage) — 在 DSH 面板里管理 GitHub Pages 博客：按标签分组浏览 Markdown 文章，用表单填 front matter 并在分屏编辑器里修改，再通过 GitHub REST API 把改动作为一次 commit 发布。
@@ -5946,6 +5947,7 @@ dsh plugin --profile web add dshmarket
 - [woshipixiu1234/dsh-invest-bundle](https://github.com/woshipixiu1234/dsh-invest-bundle) — 投研插件：10 个工具（检索、正文抓取、来源审计、断言核验、数值严谨、通道体检、workflow 装载、图表引擎、PDF 渲染、PDF 准出），外加 23 个改造自 ai-berkshire 的技能。六阶段 workflow 让段永平/巴菲特/芒格/李录四个 Agent 并行研究、交叉质证，最终产出带封面、表格、图注与页码的图文 PDF。需 Python 3.10+；图表与 PDF 工具还需 python-docx 与 matplotlib。
 - [wyzh0117/dsh-skill-select](https://github.com/wyzh0117/dsh-skill-select) — 侧边栏技能选择器：列出已安装技能并标注 Global 与所属 repo，支持本会话勾选与常驻默认启动、可选 Guard、Codex/Grok/Hermes 用户技能，以及 /skill 注入。
 - [xi-kari/dsh-amphoreus](https://github.com/xi-kari/dsh-amphoreus) — 把 δ-me13（翁法罗斯）的 13 张黄金裔角色技能卡变成席位工作区：逐席配色与壁纸、首轮自动注入技能卡、对话表情、每席记忆便签与预设、Alt+数字切席，以及用于派发与移交的总览画布；技能套件本身从可配置的本地目录读取，不随插件打包。
+- [xiake-1/dsh-skill-toggles](https://github.com/xiake-1/dsh-skill-toggles) — 按分组开关 DSH 暴露的技能：生效集合是所有启用中分组的并集；含成员由当前目录判定的自带技能分组、输入框上的面板，以及给智能体的 skill_toggles_* 工具。
 - [xiaohai-78/dsh-mode-skills](https://github.com/xiaohai-78/dsh-mode-skills) — dsh 的 Skill（技能）管理页：按 Agent 模式把每个 Skill 设为开、仅手动、仅模型或关；从会话历史统计每个 Skill 在各模式里被加载的次数；搜索 skills.sh 并从 GitHub 安装；从 Codex、Claude Code 或文件夹导入；新建、编辑、保存版本，删除的 Skill 进回收站；卸载后模式照常可用。
 - [xiatian-wuhan/dsh-skills-hub](https://github.com/xiatian-wuhan/dsh-skills-hub) — 显示每个已安装 skill 在模型上下文中占多少，并能在不删除文件的前提下把它从目录里摘掉。按 DSH 的渲染规则给出模型实际看到的那一行（介绍归一化并按目录上限截断）、正文体积与 token 估算；可逐字预览模型将收到的目录消息，与会话里已发布的那份比对，并列出来自磁盘却进不了目录的 skill（frontmatter 无效，或被更高优先级的同名 skill 覆盖）。隐藏会写入 disable-model-invocation 并保留文件，skill 仍可通过 /名字 调用。同时支持从 ClawHub、Skills.sh 与 GitHub 链接导入，以及卸载用户目录下的 skill。
 - [xiaxi626/dsh-skills-nexus](https://github.com/xiaxi626/dsh-skills-nexus) — 通用 skill 适配器，将含 SKILL.md 的 GitHub 仓库克隆并 symlink 到官方 skills 根目录，注册为 DSH skill。
