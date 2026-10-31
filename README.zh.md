@@ -669,6 +669,7 @@ dsh plugin --profile web add dshmarket
 - [houyanchao/dsh-timeline](https://github.com/houyanchao/dsh-timeline) — DSH 效率插件：时间轴、提示词库、导出对话、闪记等提效功能。
 - [hoyyang/dsh-improve-prompt](https://github.com/hoyyang/dsh-improve-prompt) — DSH 输入框一键增强提示词：点 ✦ 把草稿改写成 Agent 可执行的提示词，直接替换并可一键撤回；保真闸机械校验硬事实（路径、标识符、数字与版本、URL、反引号代码）逐字存活，长度闸防止把一句话需求膨胀成规格书。
 - [HsiangNianian/dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) — DSH Web 请求中断自动续跑：网络、超时或宿主崩溃等非人为失败后自动发送「继续」，支持错误分类、自适应退避、模板化继续文本与浏览器通知。
+- [hsthanb4/dsh-magpie-usage](https://github.com/hsthanb4/dsh-magpie-usage) — DeepSeek Harness (DSH) 插件：将 Magpie 本地网关（127.0.0.1:3425）的配额与用量进度圆环嵌入输入框底部状态栏（与上下文比例并列），支持各会话模型自动跟随嗅探、置顶卡片自动置顶与 5 小时重置倒计时微型面板。
 - [hu669293657/dsh-turn-tools](https://github.com/hu669293657/dsh-turn-tools) — 在每轮对话末尾添加产出文件按钮（用系统默认程序打开），并提供可在轮次间快速跳转的悬浮圆点导航栏。
 - [Hu9956/DSH-model-controls](https://github.com/Hu9956/DSH-model-controls) — 切换供应商、模型与思考强度，每个模型各自记住档位。
 - [huaguoxingkong/dsh-prompt-rewriter](https://github.com/huaguoxingkong/dsh-prompt-rewriter) — 在输入框旁加一个按钮，把草稿直接原地改写成更完整的提示词（无预览步骤），支持撤销、随时停止、可选参考本会话上下文。
@@ -717,6 +718,7 @@ dsh plugin --profile web add dshmarket
 - [iimaguest/dsh-contradictions-indicator](https://github.com/iimaguest/dsh-contradictions-indicator) — 对当前 DSH 会话做并行矛盾分析，在会话标题栏显示 0–100 连贯性徽章与评注，支持手动触发和按轮数的自动分析（默认开启，可按会话或全局调整）。
 - [imkingjh999/dsh-shorts-wall](https://github.com/imkingjh999/dsh-shorts-wall) — 在 DSH Web UI 中加入默认贴边的竖屏短视频墙：YouTube Shorts 与 B站双源、关键词轮换、四角缩放及 Alt+S/Alt+M 快捷键。
 - [Imnotndesh/dsh-peak-pricing-warning](https://github.com/Imnotndesh/dsh-peak-pricing-warning) — 在模型选择器旁以行内文字显示 DeepSeek 峰谷定价状态、距下一次调价的倒计时，以及本次会话的预估费用。
+- [imwhatiam/dsh-mosaic](https://github.com/imwhatiam/dsh-mosaic) — 把回答里的 dsh-view 围栏渲染成卡片——文本、表格、图表、Mermaid 图与沙箱 HTML 组件——并提供可编辑的模型提示、render_view 工具和内置技能。
 - [IndieXiaoLong/DSH-Enhance](https://github.com/IndieXiaoLong/DSH-Enhance) — 为 DSH Web GUI 增加对话命名、文件拖拽引用、编辑重发、消息时间线和悬浮设置面板。
 - [ingeb0rga/dsh-sidebar-hover](https://github.com/ingeb0rga/dsh-sidebar-hover) — 仿 Claude Code 的侧栏（macOS 桌面版）：悬停在折叠的侧栏按钮上即可将侧栏浮层展开，选择会话后自动收起，点击按钮固定；另有会话历史前进/后退箭头（⌘\[ / ⌘]）。
 - [Inoue-Cyrene/dsh-ctrl-wheel-zoom](https://github.com/Inoue-Cyrene/dsh-ctrl-wheel-zoom) — 按住 Ctrl 滚动鼠标滚轮即可缩放整个 Harness 网页界面，以指针位置为锚点、50%–200% 每档 10%；另支持 Ctrl 加减号与 Ctrl+0 快捷键；右下角缩放胶囊与「设置 → 通用」里的页面缩放行显示当前档位并可一键复位；档位保存在 localStorage。
@@ -6526,6 +6528,7 @@ dsh plugin --profile web add dshmarket
 - [chenvinc/dsh-2-atoll-notice](https://github.com/chenvinc/dsh-2-atoll-notice) — 把 DeepSeek Harness 的任务状态（失败、等待你处理、已完成）镜像到 macOS Atoll 灵动岛上的同一枚状态灯，并显示三种状态的计数。
 - [chenvinc/dsh-task-settle-notify](https://github.com/chenvinc/dsh-task-settle-notify) — 任务看板卡片结算后，把标题、成败、耗时与下一步排队送进发起该卡的那个 DSH 会话；成功卡按可配置窗口合并（默认 30 秒），失败卡立即发送。卡片执行中提问时，问题也送回同一个会话，再由它把回答交回卡片。
 - [chenweigao/dsh-perch-notify](https://github.com/chenweigao/dsh-perch-notify) — dsh 会话的 Webhook 通知：审批被请求或回合结束时发送 POST，可发往 ntfy、Bark、Slack/钉钉/企微机器人地址或任意 HTTPS 端点。
+- [chenyuiyu/dsh-attention-reminder](https://github.com/chenyuiyu/dsh-attention-reminder) — 需要授权或确认时敲一记短音、把 DSH 窗口提到最前、在页面最上层浮出提醒卡片，并弹一条系统通知。声音与弹窗是会话头部上的两个独立开关，刷新与重启后仍然保持。
 - [chidaic/dsh-agent-notify](https://github.com/chidaic/dsh-agent-notify) — 任务完成或需要你输入/批准时弹出 Windows 系统通知（浏览器 Notification API）：完成/提问/审批/计划审阅提醒，点击气泡直达会话，支持后台模式，设置页在官方设置 → 任务提示。
 - [chintoleung/dsh-ping](https://github.com/chintoleung/dsh-ping) — 为 DeepSeek Harness 的提问、审批请求与回合完成发送 Telegram 通知。仅通知不改交互：单运行时文件、零运行时依赖、不自建问题卡片。
 - [chromoany/dsh-notify-me](https://github.com/chromoany/dsh-notify-me) — 通知提醒 / 消息提醒 / 消息通知 / 桌面通知弹窗 / 桌面提醒 / 弹窗通知、弹窗提醒 / 任务提醒、任务完成提醒 / 后台提醒、回复完成提醒 / 审批提醒：模型需要你操作（审批、方案确认、提问）或任务、回复跑完时，弹出系统通知（可操作提醒、审批通知、完成通知）与提示音，并标记标签页标题；这是一款 DSH 通知提醒插件、DSH 提醒插件、消息通知插件，设置页可开关提醒、调音量、切换中英文通知语言。
@@ -6975,6 +6978,7 @@ dsh plugin --profile web add dshmarket
 - [k0ndrateff/dsh-plugins#sentry](https://github.com/k0ndrateff/dsh-plugins/tree/main/packages/sentry) — 把 Sentry 接进 DeepSeek Harness：提供 Sentry MCP 服务器的工具、结果卡片，以及可解决、忽略与指派的问题面板。
 - [kaine380/dsh-mcp-unified-panel](https://github.com/kaine380/dsh-mcp-unified-panel) — 一站式 MCP 与技能管理中心，支持特征识别与原生 OAuth 2.1 浏览器鉴权。
 - [kanneiren/dsh-network-settings](https://github.com/kanneiren/dsh-network-settings) — 可视化 DSH 进程在 Windows 或 WSL 上的网络链路（DNS/TCP/TLS/HTTP 分层探测），检测失效的代理配置，并提供带快照回滚的安全修复。
+- [KDreamelf/dsh-phoenix](https://github.com/KDreamelf/dsh-phoenix) — 进程内崩溃兜底：接管本该让 DSH 退出的致命错误处理器，从栈里认出是哪个插件，只在 home 层停用那一行——profile 与里面的供应商配置一个字节都不写。崩溃页给出恢复、保持禁用、卸载三个选择；认不出是谁时，开一个临时的安全模式会话（仅命令行与 web 启动）。
 - [kennethfan/dsh-sandbox-tune](https://github.com/kennethfan/dsh-sandbox-tune) — 让构建命令直接在 DSH 沙箱内跑通，不再每次申请提权：把纯缓存（GOCACHE、NPM_CONFIG_CACHE、BUN_INSTALL_CACHE_DIR、PIP_CACHE_DIR）重定向到临时目录，或原地授权真实缓存目录以与终端共用。依赖仓库（GOMODCACHE、CARGO_HOME）永不重定向，只做授权。另提供可选的用户目录授权（~/.config 等，默认全关）与命令白名单：支持逐字符匹配，或按 &&、||、;、| 拆段后逐段匹配，写文件的重定向（fd 复制如 2>&1 与 /dev/null 除外）、命令替换与后台执行一律拒绝。配置支持按 profile 或按会话生效，改配置文件无需重启。
 - [keyiadiannao/dsh-power-button](https://github.com/keyiadiannao/dsh-power-button) — 一个小而自洽的 DSH 电源控制插件：侧边栏电源按钮 + 上拉「重启/关机」菜单 + Windows 关机风格过渡遮罩。自带重启/关机引擎（不依赖其它插件），动态端口适配。
 - [KhaosGx/dsh-stop-service](https://github.com/KhaosGx/dsh-stop-service) — DSH Web 设置页的服务控制面板：实时宿主信息（PID、版本、运行时长、内存/CPU 趋势、活跃会话）、npm 更新提醒，以及带确认的优雅停止——任务运行时发出警告，也可等待任务结束后自动停止。
