@@ -1209,7 +1209,7 @@ dsh plugin --profile web add dshmarket
 - [Rice00/dsh-loupe](https://github.com/Rice00/dsh-loupe) — 在浮窗里解释 DSH 对话中选中的词或句子：走独立通道、不污染当前会话，解答可以固定成独立会话。
 - [Rick1125/dsh-beads-viewer](https://github.com/Rick1125/dsh-beads-viewer) — 右侧栏的 Beads 议题浏览器：按可开工、受阻与各状态筛选并搜索 tracker，阅读渲染后的议题正文，其中的项目文件与议题 id 可直接点击，并可一键复制或插入 id。需要 PATH 上的 bd CLI，以及已初始化 Beads 工作区的项目。
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) — Web UI 可自定义键盘快捷键：34 个预置功能（会话、视图、剪贴板、模型、静默权限切换、设置），一键录制自定义组合键，内置快捷键速查表与诊断面板。
-- [ridistant8-art/dsh-cookie-meter](https://github.com/ridistant8-art/dsh-cookie-meter) — DSH 桌面版 cookie 占用百分表：浮窗按 dsh-auth cookie 条数估算其占请求头的百分比，超过一半数字变红提醒，点一次即可安排在下一次启动时清空 cookie 库，避免启动约 72 次后被 431 挡住。
+- [ridistant8-art/dsh-cookie-meter](https://github.com/ridistant8-art/dsh-cookie-meter) — DSH 桌面版（0.2.x）cookie 占用百分表，仅支持 Windows：浮窗按 dsh-auth cookie 条数估算其占请求头的百分比，超过一半数字变红提醒，点一次即可安排在下一次启动时清空 cookie 库，避免启动约 72 次后被 431 挡住。
 - [riesbri/dshline#dshline](https://github.com/riesbri/dshline/tree/main/packages/dshline) — DeepSeek Harness 的终端原生 TUI 前端，通过 Harness 能力提供会话、模型、插件、任务、子代理、待办事项和 Provider 配置，并保留真实的终端滚动历史。
 - [rinsoraa/dsh-pulse-rail](https://github.com/rinsoraa/dsh-pulse-rail) — 把 DSH 的轮次导航条变成音乐可视化：每根细横条按自己的频段变长变粗（系统声音用 WASAPI loopback 采集）。只改几何、不加颜色或发光，导航条原有的悬停预览、点击跳转与滚轮滚动都保留。
 - [rivenshanghai/dsh-toomuch-plugins](https://github.com/rivenshanghai/dsh-toomuch-plugins) — 把 DSH Web 侧栏里工作区上方的全局面板入口收成侧栏底部的一个开关。
@@ -2793,7 +2793,7 @@ dsh plugin --profile web add dshmarket
 - [vitas/dsh-model-pricing](https://github.com/vitas/dsh-model-pricing) — DSH 设置页中的模型价格表：约 7,250 个模型 / 213 个提供商（叠加本地路由目录），诚实的最低标价比较、按实际路由计价的会话成本、缓存泄漏归因，以及经验证的促销信息源。
 - [volcengine/ark-cli#ark-plan-api](https://github.com/volcengine/ark-cli/tree/main/dsh-plugins/ark-plan-api) — 在 DSH 原生模型选择器中注册方舟 Agent Plan、Coding Plan 与后付费模型路由。
 - [Wahwayhale/dsh-connect-doubao](https://github.com/Wahwayhale/dsh-connect-doubao) — 复用本机豆包桌面客户端已有的登录态，作为 DeepSeek Harness 的模型 provider，并提供 5 小时限额与周额度的只读额度概览。仅 Windows x64：凭据解密依赖 DPAPI。
-- [wang111928/dsh-huawei-connect](https://github.com/wang111928/dsh-huawei-connect) — 把华为「码道 CodeArts」与「果办 OfficeAce」两个平台的模型接入 DeepSeek Harness：一处登录、积分余量与模型勾选、官方客户端同形态的请求伪装。
+- [wang111928/dsh-huawei-connect](https://github.com/wang111928/dsh-huawei-connect) — 把华为「码道 CodeArts」与「果办 OfficeAce」两个平台的模型接入 DeepSeek Harness：复用已有登录态（码道桌面端或 dsh-codearts 已登录；果办桌面端需在 Windows 上运行并登录），显示各账号积分余量、按平台勾选模型，并按官方客户端形态构造请求。
 - [wangnian886/dsh-model-toggle](https://github.com/wangnian886/dsh-model-toggle) — 在 DSH 设置页给自定义（llm-pi-ai）提供商的每个模型加「隐藏 / 显示」开关。隐藏的模型会从对话底部的模型选择器消失，条目原样存档、随时可恢复；禁用或卸载本插件会自动全部还原。内置 DeepSeek 提供商不归本插件管。
 - [wangyemen/agnes-ai-for-dsh](https://github.com/wangyemen/agnes-ai-for-dsh) — 为 llm-pi-ai 预声明 Agnes AI 供应商：4 个多模态对话模型，以及图像与视频生成工具。
 - [webkubor/dsh-llm-hub](https://github.com/webkubor/dsh-llm-hub) — 补上官方 pi-ai 适配器在模型页缺的那半：网关可达性与延迟探测、一键拉取网关模型目录并勾选写回配置、DeepSeek 余额与各家配额就地常驻、每个 provider 实际接入的协议与地址；模型下拉只列当前真能用的分组 —— key 失效、余额耗尽、配额用尽都会被摘掉，修好后自动恢复。
@@ -3045,7 +3045,7 @@ dsh plugin --profile web add dshmarket
 - [delock/dsh-whats-up](https://github.com/delock/dsh-whats-up) — What's up · 在忙啥——零维护的会话动态看板:host 端扫描全部会话,为每个会话提取「目标 + 一句话现状」(多 provider LLM、按指纹缓存),自动发现做到一半、问了没回、近期在推进的事,点卡片一键跳回会话。
 - [DenAbr/dsh-compact-selected-model](https://github.com/DenAbr/dsh-compact-selected-model) — /compact 与自动压缩使用会话中当前选中的模型来生成摘要，而不是用跑完上一轮的那个模型。
 - [deqingLv/dsh-slash-new](https://github.com/deqingLv/dsh-slash-new) — /new 指令：在当前工作区打开空白会话（已有空会话可直接复用），并把原会话的权限预设与 Agent 预设带入新会话，开新会话不会悄悄改变代理的可用权限。
-- [device1999/dsh-session-archive-delete](https://github.com/device1999/dsh-session-archive-delete) — 给 DSH 会话「…」菜单加「备份删除」与「彻底删除」两个入口：先把会话目录、投影缓存和元数据快照复制到本地归档文件夹并逐文件校验，通过后再删除原件以释放磁盘空间；派生的子代理会话一并处理，每个备份文件夹都带 RESTORE.txt 恢复步骤。关键词：会话删除；删除会话；清理会话；备份删除；彻底删除；会话管理；释放磁盘空间；子代理会话；session-delete；delete-session；session-cleanup；session-cleaner；remove-session；dsh-session；disk-space；subagent；deepseek-harness；dsh；dsh-plugin；session；delete；backup；archive；cleanup。
+- [device1999/dsh-session-archive-delete](https://github.com/device1999/dsh-session-archive-delete) — 给 DSH 会话「…」菜单加「备份删除」与「彻底删除」两个入口：先把会话目录、投影缓存和元数据快照复制到本地归档文件夹并逐文件校验，通过后再删除原件以释放磁盘空间；派生的子代理会话一并处理，每个备份文件夹都带 RESTORE.txt 恢复步骤。
 - [Diluka/dsh-afk](https://github.com/Diluka/dsh-afk) — 面向 ask_user_question 的 AFK 离开模式：当前 profile 全局或会话级设置，自定义自动应答或禁用新提问调用，基于会话日志的提问记录与已读状态；不批准权限或计划。仅支持 DSH 0.2.1-rc.2 与 0.2.1-rc.3。
 - [Domaki-co/dsh-message-forward](https://github.com/Domaki-co/dsh-message-forward) — DSH 会话间消息转发：把单条模型回复、用户消息或多选合并的消息与图片从上游会话提取出来投递到另一个会话，支持静默发送、填入草稿、发送并跳转三种投递方式，并可套用提示词模板。
 - [domitor-syh/dsh-rollback](https://github.com/domitor-syh/dsh-rollback) — TRAE 式「回退到本轮对话发起前」插件：按轮次建立检查点（10 轮滑动窗口），同时回滚工作区文件与原位截断模型上下文，保持同一 session id。回退只能由人发起：/rollback 命令或每轮的 Web 回退按钮（被中断的轮次也可用），弹窗逐条列出受影响文件及其动作（恢复/找回/删除/跳过）。
@@ -7439,7 +7439,7 @@ dsh plugin --profile web add dshmarket
 - [xtd1145/dsh-full-access-switch](https://github.com/xtd1145/dsh-full-access-switch) — 给 DeepSeek Harness 加 Full access 一次性开关：新工作区与新对话默认 danger-full-access 并跳过逐个确认；可作为 dsh bundle 安装，也可用脚本打补丁。
 - [yanli-nyan/dsh-recycle-bin](https://github.com/yanli-nyan/dsh-recycle-bin) — 把删除的文件送进 Windows 回收站，可按 id 列出与还原，并拦截 shell 通道的永久删除。
 - [Yazzyk/dsh-file-shield](https://github.com/Yazzyk/dsh-file-shield) — 屏蔽 agent 对指定文件或目录的读取、搜索、写入与编辑，使其内容不进入对话——含敏感词的文件也在其中，避免它们的文字让之后的 provider 请求以 400 失败。规则在插件页面上点选。
-- [Yersi88/dsh-ollama-tool-guard](https://github.com/Yersi88/dsh-ollama-tool-guard) — 每次工具调用前由本机 Ollama 决策模型判定：可疑调用升级为确认提示，模型不可达时停止所有调用。
+- [Yersi88/dsh-ollama-tool-guard](https://github.com/Yersi88/dsh-ollama-tool-guard) — 每次工具调用前由本机 Ollama 决策模型判定：可疑调用升级为确认提示，模型不可达时停止所有调用。需 DSH 0.2.x，并先装好本机 Ollama 0.35.1+、拉取默认约 6 GB 的 clef-flash 模型；否则所有工具调用都会被拒绝。
 - [ylwl1997/noatmark-dsh-plugin](https://github.com/ylwl1997/noatmark-dsh-plugin) — 文本卫生 dsh 插件：净化不可信文本、扫描隐形字符、清洗 LLM 格式、转义 CSV 公式注入。
 - [youchen-yc/dsh-security-judge](https://github.com/youchen-yc/dsh-security-judge) — 代码安全防御规则评审判官：自动识别正在做代码的会话，按《代码安全防御架构规则》强制评审其安全防御措施与所采用的代码安全防御架构，推荐程序需要的架构（一种或多种）并检查架构之间是否冲突；连续不合格会进入教学模式要求重做；在面板授予评审权限后，未通过评审的代码任务不能算完成（未授权时只读观察）。
 - [yuloop/dsh-secret-vault](https://github.com/yuloop/dsh-secret-vault) — 把密钥和个人信息交给 agent，却不进入它的上下文；带校验位的字段抽取与掩码内容分类。
@@ -8066,7 +8066,7 @@ dsh plugin --profile web add dshmarket
 - [xrn1997/dsh-novel](https://github.com/xrn1997/dsh-novel) — 在 DSH Web GUI 里读网络小说：导入 legado 书源、跨源搜索、带进度的书架、连续滚动阅读、导入本地 TXT 与 EPUB，并让 AI 助手工具接到同一套书源、书架与正文上。
 - [Yang-wudi/dsh-kun-like-pet#kunpet-dsh](https://github.com/Yang-wudi/dsh-kun-like-pet/tree/main/packages/kunpet-dsh) — 住在 DSH Web 界面右下角的坤坤桌宠：随 Agent 状态切换动作，任务完成时播放「你干嘛~哎哟」。
 - [yimeng-life/dsh-happy](https://github.com/yimeng-life/dsh-happy) — 给 DSH 对话区加十种整屏动效背景——星空、代码雨、电路、华山论剑、小猫、小女生、飞机大战、赛车、飘雪、肥皂泡；每回合随机一个，正文列有纱罩保证可读。
-- [Yuanawaqwq/dsh-columbina-pet](https://github.com/Yuanawaqwq/dsh-columbina-pet) — 哥伦比娅桌宠：桌面与网页面板上都有 2D live 形象，四套形象、76 句中日英原声台词、天气播报、表情包时刻、闲暇碎碎念，右键菜单可调动图切换间隔、形象、语言与大小。另有夜间勿扰、音量与一键静音、可搜索的待机动作勾选、省电模式。
+- [Yuanawaqwq/dsh-columbina-pet](https://github.com/Yuanawaqwq/dsh-columbina-pet) — 哥伦比娅桌宠：桌面与网页面板上都有 2D live 形象，四套形象、76 句中日英原声台词、天气播报、表情包时刻、闲暇碎碎念，右键菜单可调动图切换间隔、形象、语言与大小。另有夜间勿扰、音量与一键静音、可搜索的待机动作勾选、省电模式。本插件是 PC2005-cloud/dsh-pet（MIT）的 2D 专用分支，去掉了上游的 3D 形象切换；使用独立插件 ID，可与 dsh-pet 同时安装。
 - [yushi-xxh/dsh-homepage-skin](https://github.com/yushi-xxh/dsh-homepage-skin) — 给 dsh web 铺上 DeepSeek Harness 首页同款背景：WebGL 流体光效、点线网格与数字点云鲸鱼，深色/亮色两套配色。
 - [yuyu520fish/dsh-fishtank](https://github.com/yuyu520fish/dsh-fishtank) — 一条养在 Harness 里的小鱼：有自己的记忆、心情和心事，隔天还记得你；鱼本身就是一个能导出带走的 JSON。
 - [yyh-001/dsh-meme](https://github.com/yyh-001/dsh-meme) — 聊天表情包：纯文本斗图、情绪主动发图、像 QQ/微信 一样发图、AI 自动学图、自定义表情包。
