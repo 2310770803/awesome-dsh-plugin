@@ -1,5 +1,5 @@
-url: https://github.com/Wcof/DeepSeekBox
-name: Wcof/DeepSeekBox
+url: https://github.com/Wcof/PlugBox
+name: Wcof/PlugBox
 category: market
 description:
   en: 'A plugin center for DeepSeek Harness: install, update and enable DSH plugins, aggregate plugin index sources, and install from a git branch. Also publishes a subscribable format-1 plugin index.'
