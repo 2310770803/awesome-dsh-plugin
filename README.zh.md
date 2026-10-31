@@ -295,6 +295,7 @@ dsh plugin --profile web add dshmarket
 - [Asza-other/dsh-narrator](https://github.com/Asza-other/dsh-narrator) — 盯着回合里的长时间沉默：超过阈值就注入一条用户消息，让模型先用正文说清正在做什么、做到哪了再接着干，回合不中断。这段原文同步显示在输入框上方的左下角浮窗。静默阈值与两次汇报的最小间隔都在设置卡里按分钟调，提示词可整段替换，零运行时依赖。需 DSH 0.2.1+ 与 Node.js 18+。
 - [Audrey-cn/dsh-bot-codex-ui](https://github.com/Audrey-cn/dsh-bot-codex-ui) — DS Bot 与 Codex 风格侧栏的合一安装：一个包同时挂载两者并修复共存时的布局冲突（输入框对齐、侧栏底部、账户入口、对话宽度）。
 - [AumiSatori/dsh-ui-beautify](https://github.com/AumiSatori/dsh-ui-beautify) — 自定义 DSH 玻璃材质与独立明暗主题，支持图片、视频与 HTML 背景、粒子、自定义问候与开屏、覆盖侧栏、任务与 Artifact 卡片、消息气泡、回答逐字渐显，以及配置导入导出。
+- [AvigatorC/dsh-conversation-width](https://github.com/AvigatorC/dsh-conversation-width) — 把 dsh 界面的对话框固定为像素宽度或列宽百分比，设置项在「通用」设置页；锁定后隐藏内置拖动手柄，宽度不再被误拖。
 - [awaYFawa/dsh-plugins-folders](https://github.com/awaYFawa/dsh-plugins-folders) — 给 DSH 插件页加文件夹：把已装插件分组、整组开关、批量移动并可撤销、跨分组搜索、长按拖动排序，卸载后按记录一键装回，还能一键重启 Harness。
 - [AWL-MC2/DSH-Plugin_awl](https://github.com/AWL-MC2/DSH-Plugin_awl) — 面向 DSH Web 的「壁纸感知」可读性修复：用 color-mix 把三个低对比次级文字 token 向主文字靠拢，并叠加可调强度的文字光晕；提供仅作用于会话 Markdown 的内容规则（链接加粗 / 常驻下划线 / 变色、标题与正文变色）、可调的彩虹描边与渐变填充标题特效、从插件目录或 DSH_HOME 加载的自定义字体，以及带 WCAG 对比度徽标的可拖动 WYSIWYG 预览窗。
 - [Awu12277/dsh-sleep-send](https://github.com/Awu12277/dsh-sleep-send) — 在输入框右侧提供「定时发送」按钮与配置面板，支持智能时段、自定义日期时间、多个定时任务并行，任务经 localStorage 持久化，刷新页面后自动恢复。
@@ -1278,6 +1279,7 @@ dsh plugin --profile web add dshmarket
 - [SkyblueeeLabs/dsh-iconic-launcher](https://github.com/SkyblueeeLabs/dsh-iconic-launcher) — 自定义 DeepSeek Harness 桌面快捷方式图标：选预设或上传图片，自动去除白底、生成多尺寸 ICO，一键写入桌面快捷方式。
 - [skyhancloud/dsh-client-ui-quote](https://github.com/skyhancloud/dsh-client-ui-quote) — 在网页聊天输入框上方为选中的 AI 回复内容添加可移除的引用横幅，随下一条消息一并发送。
 - [skyline66/dsh-desktop-clock](https://github.com/skyline66/dsh-desktop-clock) — 可拖动的 DSH 网页悬浮时钟：支持数字与指针表盘、专注计时、四套主题，并会记住窗口位置。
+- [sleep123937/dsh-assist-chat](https://github.com/sleep123937/dsh-assist-chat) — 右侧栏辅助对话：把当前会话分支成独立 Session，追问不打断主线。直接复用产品自带的对话界面，流式输出、工具调用、Stop 与 composer 与主对话完全一致。
 - [SmailPang/dsh-effort-slider](https://github.com/SmailPang/dsh-effort-slider) — 在原位置将 DSH 原生推理等级选项替换为可拖动的 Off、Low、High、Max 滑块，并保留官方模型选择流程。
 - [SmileBuild/dsh-planchart](https://github.com/SmileBuild/dsh-planchart) — 把 agent 写出的项目规划显示出来：有序步骤在窗口右侧停靠的面板里，框架图在单独的中间标签页中自动排版，可下载为 SVG 或 PNG。图表由会话日志重建，重启与恢复后依然保留。
 - [smj-1680/dsh-plugin-liquid-glass](https://github.com/smj-1680/dsh-plugin-liquid-glass) — 适用于 DSH 桌面端的液态玻璃 UI 美化插件，可与大部分壁纸插件联动使用，目前仅适配深色模式。
@@ -1436,6 +1438,7 @@ dsh plugin --profile web add dshmarket
 - [winditer/dsh-prompt-optimizer](https://github.com/winditer/dsh-prompt-optimizer) — 在输入框按 ✨ 或 Alt+O 一键把草稿润色成更清晰、更结构化的 prompt；默认零配置复用当前会话模型（SSE 真流式、推理过程先出），也可自配任意 OpenAI 兼容端点。
 - [winditer/dsh-recent-tasks](https://github.com/winditer/dsh-recent-tasks) — DSH 侧边栏里常驻末位、可折叠的「最近任务」工作区分组：侧边栏入口与 Mod+Alt+N / Mod+Shift+N 快捷键在专用目录里开新对话，对话因此归入这个分组，而不是「未分组」。该分组是真正的工作区记录，而非插件画出来的仿制品，折叠、改名、搜索与拖拽排序都正常可用；目录、分组名、常驻末尾与自动重建都是实时设置。
 - [winditer/dsh-temp-chat](https://github.com/winditer/dsh-temp-chat) — DSH 页面悬浮的半透明 DeepSeek 鲸鱼小精灵：点击打开可拖动、可最小化的临时聊天浮窗，支持跟随会话模型或自定义 OpenAI 兼容端点实时流式输出。
+- [Windpixy/dsh-floating-window](https://github.com/Windpixy/dsh-floating-window) — 浮在 Windows 桌面上的磨砂玻璃状态卡片，显示 DSH 正在做什么——运行中的任务及已跑时长与当前动作、待审批项、今日 Token 用量与谷时倒计时——不用时可缩成一根 14×120 的细柱贴在屏幕边缘。
 - [windrover/dsh-minimal-UI-panels](https://github.com/windrover/dsh-minimal-UI-panels) — 给 dsh web 客户端加四个右侧栏面板：产物浏览、长期记忆、终端、记事本。两两配成一个标签、中间可拖拽分栏，因此两个窗格就能同时看到四个。终端每行执行一条 bash 命令，默认 120 秒期限、可随时终止。宿主侧一并提供 9 个 memory_* 工具、artifacts_list、/memory 命令，以及 /api/artifacts/* 与 /api/terminal-notes/* 路由。需要 dsh 0.1.5 及以上，以及 0.2 系列。
 - [windrover/dsh-prompt-optimizer](https://github.com/windrover/dsh-prompt-optimizer) — 给对话输入框工具行加一个提示词优化器：选类别（基础 / 上下文 / 图像）与模板，点 ✨ 即原地改写草稿，支持一键还原。可取消，并显示耗时与 token 用量。内置 15 个模板，覆盖任务指令改写、需求步骤化规划、逆向/安全研究语境与系统提示词角色卡，以及文生图与图生图提示词。上下文类模板会读取当前会话最近几轮用于消歧。调用走宿主模型服务，设置分区可调模型与各项预算；输出守卫会核对用户明写的约束是否保留，只告警不自动重试。适配 dsh 0.1.7 与 0.2 系列。
 - [WindyPro-rourou/dsh-code-studio](https://github.com/WindyPro-rourou/dsh-code-studio) — DSH Web UI 的文件修改监视器与代码工作台。Agent 修改代码时实时浮现逐行 Diff，内置语法高亮编辑器，支持一键还原、修改历史、工作区切换与按会话隔离。
@@ -2123,6 +2126,7 @@ dsh plugin --profile web add dshmarket
 - [Zoria-Lind/dsh-token-optimizer](https://github.com/Zoria-Lind/dsh-token-optimizer) — Token 优化：支持可搜索的 MCP 工具发现与懒加载、可配置的压缩控制与状态查看、工具输出精简、长文本视觉摘要，以及可选的对话原文归档与分页回查。
 - [zouxiaoyang/dsh-commandcode-usage](https://github.com/zouxiaoyang/dsh-commandcode-usage) — DSH 的 CommandCode 用量与余额面板：在侧边栏底部显示 API 用量、信用额度、5小时/每周窗口。
 - [zy12342/usage-widget](https://github.com/zy12342/usage-widget) — DSH 侧边栏账户余额快捷查看：显示余额、赠送额度、当前模型和官方高峰 / 空闲计费时段，按余额分四档显示质感，余额过低时提醒。
+- [zztdandan/dsh-opencode-go-quota-settings](https://github.com/zztdandan/dsh-opencode-go-quota-settings) — 在 DSH 设置页显示 OpenCode GO 套餐额度（5 小时滚动、每周、每月），通过同源代理读取官方用量接口；不注册侧栏组件。
 
 ### 🎭 主题与外观
 
@@ -3512,6 +3516,7 @@ dsh plugin --profile web add dshmarket
 - [zongyanbai/dsh-context-continuum](https://github.com/zongyanbai/dsh-context-continuum) — 把上下文压缩从滚动重写的叙事摘要改为只追加的会话索引：早期事实逐字保留，被压缩掉的原文可按锚点取回。
 - [ZRui-C/dsh-minimal-first-turn](https://github.com/ZRui-C/dsh-minimal-first-turn) — Web 根会话的首轮精简：先使用持久 bash 与 str_replace_editor，移除自动工作区和技能上下文；首次工具调用或回复后恢复所选预设，带持久 composer 开关。
 - [zsjs110110-cpu/dsh-cross-session-approval](https://github.com/zsjs110110-cpu/dsh-cross-session-approval) — DeepSeek Harness 的跨会话派活与协同：新建顶层任务会话并投递任务，用 base62 会话别名读取或干预，并通过审批桥批准子会话的沙箱提权——命中破坏性删除一律强制拒绝。
+- [zxsimple/dsh-revive](https://github.com/zxsimple/dsh-revive) — 会话回放视图：按轮重放一次会话，用户输入与助手正文保持阅读速度，思考与工具输出高速掠过且每段最多 3.5 秒，每条输入后停顿一秒；同一视图可把原始请求复刻到一个新会话，也能通过 1280×720 画布把回放录成 WebM 视频。
 - [zyd232/dsh-compaction-policy](https://github.com/zyd232/dsh-compaction-policy) — 让 DeepSeek Harness 不再过早压缩对话（把早期内容总结掉）。默认行为下，上下文窗口不大的模型（十几万 token 那种）常常在半满出头就开始压缩；装上它之后，压缩会等你设定的比例（默认 80%）到了才发生，并且可以按 provider/model 分别设置。它只改“什么时候压缩”，一次压缩保留哪些内容仍由 DSH 决定。
 - [ZyxQl-Ala/dsh-rollover](https://github.com/ZyxQl-Ala/dsh-rollover) — 上下文滚段：窗口快满时自动存档接续前情，换段后自动注入一次。两个工具 + 设置面板。
 - [ZZJQ678/dsh-global-context](https://github.com/ZZJQ678/dsh-global-context) — 全局提示词配置：在对话视图新增一个标签页，写进去的内容会加在每个会话系统提示词的最前面，保存后下一条消息即生效。
@@ -4350,9 +4355,12 @@ dsh plugin --profile web add dshmarket
 - [liudejua27-blip/fitmeet-dsh-plugin](https://github.com/liudejua27-blip/fitmeet-dsh-plugin) — 通过每位用户独立的 OAuth 授权将 DeepSeek Harness 接入 FitMeet，提供找人、组局查询、提醒、个人事项、连接反馈、大厅发布与私聊的 17 个工具，写入操作保留预览与确认步骤。
 - [liuhange789/data-asset-inspector#ai-dataset-inspector](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/ai-dataset-inspector) — AI数据集质量巡检工具，自动检测数据集中的标注一致性、类别分布偏差与数据泄露风险。
 - [liuhange789/data-asset-inspector#data-asset-attestation](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-attestation) — 数据资产认证报告插件 — 生成带证据链的认证级数据质量报告
+- [liuhange789/data-asset-inspector#data-asset-inventory-scan](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-inventory-scan) — 数据资产盘点扫描插件 — 深度元数据扫描+三性检测，输出资产清单
 - [liuhange789/data-asset-inspector#data-asset-orchestration](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-orchestration) — 数据资产编排引擎，把套件内工具串成预置流水线（脱敏→清洗→盘点→封装、鉴证、AI数据集体检、政务巡检、可流通性评估），支持增量与定时处理
 - [liuhange789/data-asset-inspector#data-asset-quality-score](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-quality-score) — 依据 GB/T 36344-2018 国家标准，从规范性、完整性等六个维度对数据质量进行量化评分，为企业数据资产入表提供可审计的底稿。
+- [liuhange789/data-asset-inspector#data-asset-registration-helper](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-registration-helper) — 数据资产登记助手插件 — 自动生成登记卡+权属确认+资产编码分配
 - [liuhange789/data-asset-inspector#data-asset-valuation](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-asset-valuation) — 数据资产估值插件 — 成本法（重置成本）+收益法两轨估值
+- [liuhange789/data-asset-inspector#data-circulation-assessor](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-circulation-assessor) — 数据流通评估插件 — 评估数据可流通性+流通场景适配+风险定价
 - [liuhange789/data-asset-inspector#data-cleaning](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-cleaning) — 数据清洗插件 — 去重+格式标准化+异常值检测
 - [liuhange789/data-asset-inspector#data-lineage](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-lineage) — 数据血缘追踪工具，梳理数据从产生到流转的全链路，满足数据产权登记中的来源合法性审查要求。
 - [liuhange789/data-asset-inspector#data-masking](https://github.com/liuhange789/data-asset-inspector/tree/main/packages/data-asset/data-masking) — 基于国家标准的自动化数据脱敏工具，自动识别身份证、手机号等敏感字段，支持完全匿名化与假名化分级策略，生成合规审计日志。
@@ -5413,6 +5421,7 @@ dsh plugin --profile web add dshmarket
 - [mhlywxl/dsh-coding-sound](https://github.com/mhlywxl/dsh-coding-sound) — 模型输出时演奏生成式背景音乐，完成、审批与等待操作各有独立提示音：不盯屏幕也能听出 Agent 在思考、仍在工作还是在等你。
 - [naili0712/dsh-gsv-local](https://github.com/naili0712/dsh-gsv-local) — 把本机 GPT-SoVITS 接进 DeepSeek Harness：随 DSH 启停引擎、只念该说出口的那一句；自带默认音色，只需填好本机 GPT-SoVITS 的 runtimeDir。
 - [NewDaNew/dsh-voice-input](https://github.com/NewDaNew/dsh-voice-input) — Web UI 语音输入：输入框一键麦克风按钮，基于 Web Speech API 语音转文字填入草稿，可选识别后自动发送。
+- [NMDwhy66154/dsh-voice-realtime](https://github.com/NMDwhy66154/dsh-voice-realtime) — 在 DeepSeek Harness 输入框里做实时语音转文字：边说话边显示识别结果，说完点完成自动插入光标处，可切换麦克风，本地 sherpa-onnx 推理、音频不出本机。
 - [Nothree-code/voco-input-sh](https://github.com/Nothree-code/voco-input-sh) — Web UI 语音输入：输入框麦克风按钮驱动本地 VocoType 离线识别，识别结果自动插入输入框（自动部署/防重复/持续输入）。
 - [nsswkj/dsh-typewriter-blip](https://github.com/nsswkj/dsh-typewriter-blip) — 把流式输出的助手回复变成短促音效：按可调的最小间隔逐字发声，只对回复正文发声，窗口最小化、被遮挡或切到后台标签页时照常发声。内置两种音色，也可自调波形，或载入音频文件当音色。
 - [Nuoyi207/dsh-gptsovits-tts](https://github.com/Nuoyi207/dsh-gptsovits-tts) — 基于 GPT-SoVITS 的本地语音合成：朗读 DSH 回复、在右侧边栏换音色，拖一段声音就能训练新音色。首次使用需下载约 11.4 GB 引擎，并要求 NVIDIA CUDA 显卡。
@@ -6782,6 +6791,7 @@ dsh plugin --profile web add dshmarket
 - [1420079678-ctrl/agent-body#dsh-organism](https://github.com/1420079678-ctrl/agent-body/tree/main/workspace/plugins/dsh-organism) — Agent-Body 的器官内核：把插件组织成一具身体。命令先被转成神经冲动、确定性地支配到该处理它的器官并指明用哪个能力；心跳按内环境变速（告警加快、静默放慢）把指令、本体状态与告警打包泵向全身；反射弧零模型调用、命中即执行；失败走确定性归因（缺工具/参数/权限/超时/网络）加处方与复检闭环，参数错误不自动重试。器官缺失时按能力重叠自动代偿，工具 schema 按当前意图显影（仓库内实测省 84.7%）。本条目是 agent-body 仓库中的内核插件本体。
 - [1624318455/dsh-plugin-proxy](https://github.com/1624318455/dsh-plugin-proxy) — DSH 运行时可切换的出站 HTTP/SOCKS5 代理，带网页设置卡片。
 - [2008924/dsh-progress-viz#plugin](https://github.com/2008924/dsh-progress-viz/tree/main/plugin) — headless dsh 任务的实时阶段、ETA 与成本看板：把黑盒会话事件流变成实时多任务网格（cordis 插件 + 本地独立看板，零 API 调用）。
+- [314857493/dsh-scoped-http-proxy](https://github.com/314857493/dsh-scoped-http-proxy) — 供 DSH 插件显式调用的独立 HTTP 代理服务，提供原生地址和端口设置。通过 scopedHttpProxy 服务接入，地址修改对后续请求生效，不修改系统代理、环境变量或全局网络连接器。
 - [566001/dsh-wrapup-guard](https://github.com/566001/dsh-wrapup-guard) — 收尾自检哨兵：任务收尾时强制「全面检查 → 修复 → 再全面检查」循环，自动跑测试/lint/audit，有未修复的问题就打回，直到连续三轮零问题才判定完成并通知用户。
 - [777-Zen/dsh-capability-index](https://github.com/777-Zen/dsh-capability-index) — DSH agent 的插件库起飞检查：向运行时上下文注入按步骤触发的提示，让合适的已装插件从「碰巧想起」变成「可预期使用」。
 - [dsh-restart-dock](https://github.com/7gzgn/dsh-restart-dock) — DSH 界面上一小框：一键重启宿主、一键刷新页面。重启会先问「立即 / 30 秒 / 60 秒 / 2 分钟 / 取消」，倒计时可撤回；小框需长按 320ms 才能拖动（避免手一抖就粘住），拖到边缘自动吸附，窗口缩放时跟着走。刷新前会真正确认插件包能加载（文件时间戳 + 取回 bundle + 语法编译三重检查），任何一项拿不到就不刷——宁可多点一次，也不把应用刷成起不来的样子。重启仅 Windows（PowerShell 5.1）；界面与刷新功能全平台可用。
@@ -7357,6 +7367,7 @@ dsh plugin --profile web add dshmarket
 - [liuqingman/dsh-hawkeye-scan#npm](https://github.com/liuqingman/dsh-hawkeye-scan/tree/main/npm) — AI 驱动的源代码安全扫描工作台：5 个模型工具（start/finding/status/report/list）、/hawkeye Web UI 和 JSON/Markdown/HTML 漏洞报告；零依赖 Cordis 插件，可作 agent preset 或 npm 包安装。
 - [liuwenji007/dsh-trust-check](https://github.com/liuwenji007/dsh-trust-check) — DSH 插件静态能力披露：设置页与 CLI 列出已装插件的权限能力、字面量去向、安装脚本与注入形态（prompt 注册、自带 skill 文本、bundle patch），每条附文件:行号证据。代码判定、可复现、零 token。只做披露，不做安全承诺，不判定恶意。
 - [lloydzhou/dsh-bash-guard](https://github.com/lloydzhou/dsh-bash-guard) — DSH 权限守卫：原生权限菜单里的四范围读写执行权限位，bash 命令可选 Jev 语义分类层。
+- [lmk2215/dsh-session-lock](https://github.com/lmk2215/dsh-session-lock) — DeepSeek Harness 侧边栏的会话锁：每个对话行尾多一个锁按钮，锁定后只把对话区挡住并弹出密码框，侧边栏照常可用。窗口失焦、切到后台、页面隐藏或换了对话都会立刻重新锁定；锁定只是界面层，正在跑的回合继续执行，遮罩上会提示后台任务仍在运行。密码摘要、锁清单和偏好存放在 <DSH_HOME>/session-lock/state.json，由两条带自定义请求头的同源路由读写，所以清掉页面的 localStorage 并不会解锁；PBKDF2-SHA256 加随机盐，连错五次锁定输入 30 秒。找回通道按机器可选：Windows 登录密码（必须用 .NET 的 PrincipalContext ValidateCredentials 在本机真实验证通过才启用，微软账户与无密码的机器会自动保持关闭），以及创建或修改密码时选定的强制冷静（1/6/24/72/168 小时，到期清空密码并解除全部锁，输对密码可中止倒计时）。设置页包含状态、修改密码、新对话默认上锁、锁定后隐藏侧边栏标题、归档恢复的三档策略（所有归档/仅已锁定/不需要密码，切换档位本身要密码）、一键上锁与一键解锁。对话框使用原生 dialog 顶层，从设置页打开的弹窗不会被设置页压住。要求 DSH 0.2.0-rc.1 及以上；无需构建步骤。
 - [log-li/dsh-automode](https://github.com/log-li/dsh-automode) — 为 DeepSeek Harness 提供 Claude Code 式自动审批：确定性 deny/allow 规则 + 两阶段 allow/reject 分类器，内置熔断器与拒绝引导。
 - [lone-wolf-akela/dsh-sandboxie-redirect](https://github.com/lone-wolf-akela/dsh-sandboxie-redirect) — 写时复制权限预设：shell 命令在工作区专属的 Sandboxie 沙盒内运行，工作区外的写入落进沙盒副本、真实磁盘不受影响（仅 Windows，需先安装 Sandboxie-Plus）。
 - [lonelymoon87/dsh-guardian](https://github.com/lonelymoon87/dsh-guardian) — 增加危险操作策略检查、输出脱敏和安全审查工作流。
