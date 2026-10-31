@@ -5120,6 +5120,7 @@ dsh plugin --profile web add dshmarket
 - [dsh-inpage-translator](https://github.com/7gzgn/dsh-inpage-translator) — 给内置浏览器的每一张页面常驻一个「🈯 译」按钮：点一下，页面上每个可见文本节点原地换成译文；再点一下回到原文。长按可拖动，拖到左右边缘自动吸成贴边小把手；页面导航后自动重装。翻译走宿主模型服务 —— 插件不持有任何 API key。
 - [A3Boy/dsh-web-tools](https://github.com/A3Boy/dsh-web-tools) — 统一的多供应商网络搜索与抓取：多 Key 轮询容灾、用量与健康监控、原生设置面板及搜索模式。
 - [aa2246740/dsh-firecrawl](https://github.com/aa2246740/dsh-firecrawl) — 提供 Firecrawl 搜索服务及多账户 API Key 设置。
+- [alamsir/dsh-iab](https://github.com/alamsir/dsh-iab) — DSH 内置浏览器：独立 Chromium 配合持久化 profile，飞书或 SSO 登录一次跨重启有效，经 CDP 驱动，提供七个 Agent 工具（status、open、eval、read、feishu、screenshot、tabs），并把页面实时镜像到右侧栏面板——工具调用时面板会自动打开。另可按虚拟滚动回扫把飞书文档转成 Markdown。
 - [alllllinnrann/dsh-inapp-browser](https://github.com/alllllinnrann/dsh-inapp-browser) — 通过 Better Sidebar 为 DeepSeek Harness 提供共享浏览器面板，支持本地 Chromium、人和 AI 的鼠标键盘操作、页面快照、截图及按聊天持久保存的浏览器资料。
 - [angelky7/dsh-browser-control](https://github.com/angelky7/dsh-browser-control) — 通过本地 WebSocket 桥接让 DSH 操控你的真实 Chrome：标签页管理、导航、DOM 快照、页面 JS 求值、点击输入、截图、等待与弹窗处理，默认关闭需在设置中开启。
 - [ankye/dsh_use_browser#use-browser](https://github.com/ankye/dsh_use_browser/tree/main/packages/use-browser) — 通用浏览器自动化：browser_open、browser_click、browser_type、browser_extract、browser_screenshot、browser_eval 六个工具，@e 元素引用，Playwright 无头与 CDP（连接本机 Chrome）双后端。
