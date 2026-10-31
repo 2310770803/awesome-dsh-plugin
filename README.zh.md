@@ -136,7 +136,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🎨 UI 增强
 
-- [01men/DeptAI-UI-DSH](https://github.com/01men/DeptAI-UI-DSH) — AI 代理与人类的协作前台——部门看板、工单、审批与行业计算都在 DSH 会话与面板里完成，代理在对话里干活，人在面板里负责。它通过既有契约调用 01men/ybkkasi 治理底座（资产台账、IAM、OIDC SSO、RBAC 与场景级授权），不重复实现治理。以 Cordis bundle 形式安装，挂载在 /gate01；自测套件每次推送全绿。
+- [01men/DeptAI-UI-DSH](https://github.com/01men/DeptAI-UI-DSH) — AI 代理与人类的协作前台——部门看板、工单、审批与行业计算都在 DSH 会话与面板里完成，代理在对话里干活，人在面板里负责。它通过既有契约调用 01men/ybkkasi 治理底座（资产台账、IAM、OIDC SSO、RBAC 与场景级授权），不重复实现治理。以 Cordis bundle 形式安装，挂载在 /gate01；自测套件每次推送全绿。请勿在同一 profile 同时安装本插件与 01men/ybkkasi 的 dsh bundle：两者都会注册 ops-platform-core / ops-iam / ops-authn 行。要求 DSH >=0.1.0-rc.7 <0.2.0。
 - [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) — 把 dsh 回合状态行换成 1059 条中英文案的轮播：打字机输出、流动彩虹渐变、弹幕、12 个可开关的主题词库包、实时占位符与标签页标题轮换。两个 star 包默认关闭；星标者包每位星标者一条文案，由工作流每周刷新。
 - [0imzero/dsh-workspace-menu](https://github.com/0imzero/dsh-workspace-menu) — DSH 主页工作区/会话增强菜单：置顶、重命名、资源管理器打开、归档、分叉、复制、新窗口打开。
 - [0x7A7A6572/dsh-forge-studio#plugin-notes](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-notes) — dsh 便签插件：侧栏入口打开 Markdown 便签面板，支持自动保存、颜色标签、粘贴图片与任务清单。
@@ -1710,7 +1710,7 @@ dsh plugin --profile web add dshmarket
 
 ### 💰 用量与计费
 
-- [01men/ybkkasi](https://github.com/01men/ybkkasi) — 自托管 AI 基础设施的资产治理控制台。把 MCP 服务 / Skill / Agent / AI 应用 / 模型渠道 / SaaS 连接器 / NAS 存储登记进同一台账，带生命周期状态机、逐工具 RBAC 权限点、部门 x Agent x Skill 三维成本归因、依赖拓扑与可追加审计日志。v1.5.0 实测：29 个插件包、488 条 REST 路由、96 个 MCP 工具，1740 项端到端断言全绿。完全自托管，MIT，无托管版无云端合约。
+- [01men/ybkkasi](https://github.com/01men/ybkkasi) — 自托管 AI 基础设施的资产治理控制台。把 MCP 服务 / Skill / Agent / AI 应用 / 模型渠道 / SaaS 连接器 / NAS 存储登记进同一台账，带生命周期状态机、逐工具 RBAC 权限点、部门 x Agent x Skill 三维成本归因、依赖拓扑与只追加审计日志。完全自托管，MIT，无托管版无云端合约。
 - [02Muller25/dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) — 输入框下方实时显示 DeepSeek API 账户余额，支持手动刷新与自定义间隔自动刷新。
 - [0disoft/dsh-ci-diet](https://github.com/0disoft/dsh-ci-diet) — 找出被浪费的 GitHub Actions 运行时间，并提出小而可审查的工作流补丁；任何修改都需要明确批准，并提供用于分析规则、历史上限、存储和成本估算的 DSH 设置页面。
 - [0x7A7A6572/dsh-forge-studio#plugin-usage-billing](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-usage-billing) — dsh 用量与费用视图：从既有会话日志聚合真实 token 用量，按事件发生时刻的价格写时锁定费用；侧栏卡片或输入框胶囊展示本月/今日花费与预算进度，设置页另有概览、趋势、明细三页。
@@ -2940,7 +2940,7 @@ dsh plugin --profile web add dshmarket
 - [Tkingxiao/I-am-Yuike](https://github.com/Tkingxiao/I-am-Yuike) — 通过自带插件去除 harness 前置与后置注入提示词，仅使用预设原生提示词运行，实现软破限与猫娘人格模拟：将猫娘 Yuike 预设幂等部署到 ~/.dsh/.agent-presets/yuike/，不覆盖已编辑的预设。
 - [UnknowCao/dsh-outlook](https://github.com/UnknowCao/dsh-outlook) — 零凭据 Outlook 自动化：13 个工具通过 COM 直接驱动本地桌面 Outlook 客户端——搜信/读信/草稿/回复转发/日历/通讯录/会议室/忙闲查询——外加侧边栏新邮件角标。无需 Graph API 注册、无需 SMTP 密码；任何外发动作都过三层人工审批门。
 - [w4xxx/dsh-xia-plugins#packages/gameassist-roster](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-roster) — 每日轮值二次元陪伴角色：按本地日期从 JSON 角色卡确定性选角，支持换角/重抽工具与 voice-map 路由。
-- [wld12314/dsh-mind](https://github.com/wld12314/dsh-mind) — 给 DeepSeek Harness 加一套心情系统：33 种心情，每 3~6 小时一次周期判定，并随消息小幅增减；另有跨会话记忆、审美品味库、加密日记。心情、记忆、品味、日记四个工具都可由模型调用，五个模块各有独立开关。日记只由模型自己写，不生成系统总结模板。
+- [wld12314/dsh-mind](https://github.com/wld12314/dsh-mind) — 给 DeepSeek Harness 加一套心情系统：33 种心情，每 3~6 小时一次周期判定，并随消息小幅增减；另有跨会话记忆、审美品味库、加密日记。心情、记忆、品味、日记四个工具都可由模型调用，五个模块各有独立开关。日记只由模型自己写，不生成系统总结模板。本插件是 JMX-4869/dsh-mood 的精简 fork：二者注册同名的心情 / 日记 / 品味 / 记忆工具，不能同时安装，只能二选一。
 - [woodfood111/dsh-subscription-login](https://github.com/woodfood111/dsh-subscription-login) — 把所有订阅登录收进一个设置页：列表直接读授权 seam 上注册的流程，引导你走完 ChatGPT (Codex)、Claude、GitHub Copilot、OpenRouter、Kimi 与 xAI，并列出已无人认领的旧凭据记录。
 - [wutian122/dsh-remote-shell](https://github.com/wutian122/dsh-remote-shell) — 打包 remote-shell 技能，提供安全的 SSH、SFTP、Telnet、WinRM 远程操作，内置加密凭证库，登录与执行脚本不接受明文密码。
 - [wuwo1979/dsh-qqbot-muu](https://github.com/wuwo1979/dsh-qqbot-muu) — 独立扩展包与补丁集，依赖并锁定 @zaofan/dsh-qqbot 1.10.39（请先装本体）。提供两层 SQLite 记忆（类海马体召回/巩固）、会自己长的人格（特别关心的人影响性格，B站/抖音的运营事件被收成摘要参与每天一次的自我反思）、人格漂移护栏、群分级、本地小模型代答与单脑仲裁、TTS 发件箱、表情包库，以及一条“主人审核”的视频流水线（分镜编排、出图质检、程序化 2D 角色动效、B 站草稿待审）。
@@ -4485,7 +4485,7 @@ dsh plugin --profile web add dshmarket
 - [Mr-Neutr0n/dsh-medseek](https://github.com/Mr-Neutr0n/dsh-medseek) — 面向临床人员的文档与参考工具包：SOAP/APSO 病程录、入院 H&P、SBAR/I-PASS 交接班、 出院小结、Safe Harbor 脱敏、患者须知可读性评分、完整性检查，以及来自 FDA 说明书、 MedlinePlus、PubMed 和 ClinicalTrials.gov 的带出处检索。仅起草不决定， 内置 PHI 外发守卫；非医疗器械。
 - [mrpulor-gh/dsh-nuphus-mcp](https://github.com/mrpulor-gh/dsh-nuphus-mcp) — nuphus-mcp 官方 DSH 插件（由 nuphus-mcp 维护者发布）：桌面 + 浏览器自动化（38 个工具），配 PaddleOCR 元素感知与 Chrome CDP 浏览，经常驻 stdio MCP 子进程接入。
 - [MrWeiCodes/dsh-fs-encoding](https://github.com/MrWeiCodes/dsh-fs-encoding) — 文件编码守护：为 GBK、Big5、Shift-JIS、EUC-KR、Windows-125x、UTF-16、UTF-32 文件提供字节级无损读写与编辑，改完仍是原编码而不是被悄悄转成 UTF-8；UTF-8 BOM 原样保留，CRLF/LF/CR 换行符保持，编码表示不了的字符拒绝写入而不是写成「?」；非 UTF-8 文件会列出候选编码，模型可显式指定重读。
-- [MSSZSD3925/dsh-toolkit](https://github.com/MSSZSD3925/dsh-toolkit) — 五个 DSH 小功能合一个插件：用 QQ 远程驾驶已有会话、向另一个会话提问（带上下文守卫）、界面暂停按钮、重启 DSH 并可选自动续跑、贵时段纪律注入。
+- [MSSZSD3925/dsh-toolkit](https://github.com/MSSZSD3925/dsh-toolkit) — 五个 DSH 小功能合一个插件：用 QQ 远程驾驶已有会话（需本机另跑 OneBot 11 实现，如 NapCat）、向另一个会话提问（带上下文守卫）、界面暂停按钮、在 Windows 上重启 DSH 并可选自动续跑（依赖 install-restart.ps1 创建的计划任务）、贵时段纪律注入。
 - [MuyuYanran/dsh-rea-mcp-lite#dsh-plugin](https://github.com/MuyuYanran/dsh-rea-mcp-lite/tree/main/dsh-plugin) — 同一个仓库里的 REA 逆向工具网关（rea-mcp-lite）的设置页：勾选加载哪些功能族、看清每族的工具数与 token 成本、把当前加载组合存成命名预设随时切回、热切换无需重启，并可检查本仓库与 REA 的更新、归类 REA 新版新增的工具。页面按功能分区，带子菜单、筛选与分页。需已装 REA（rea-agents），并按仓库 README 把网关注册为名为 rea 的 MCP 服务器。
 - [MuzeWinter/dscomputer-control](https://github.com/MuzeWinter/dscomputer-control) — 为 dsh 提供 Windows 桌面自动化：14 个工具，可枚举应用与窗口、抓取被遮挡也能截的窗口截图、读取无障碍树，并执行真实输入——点击、输入文字（含中文）、按组合键、滚动与拖拽。加载机器上已安装的官方电脑控制运行时（@oai/sky），按厂商目录枚举发现，引擎升级换目录也不会失效。
 - [nabehkh-source/primesync-ai-studio](https://github.com/nabehkh-source/primesync-ai-studio) — PrimeSync AI Studio 托管策略研究 MCP 服务的实验性配置包，使用官方 MCP 客户端和 mcp-remote OAuth 桥接，需具备 Studio 使用权限。OAuth 授权与工具调用尚未完成端到端验证；启动 Harness 前须在同一电脑上通过命令行手动登录，否则工具可能无法显示。仅面向 DSH 0.2.1-rc.2；首次启动时通过 npx 下载 mcp-remote 0.15.2。
@@ -5565,7 +5565,7 @@ dsh plugin --profile web add dshmarket
 - [PhysicalAI-0/dsh-paperforge](https://github.com/PhysicalAI-0/dsh-paperforge) — 论文阅读工作台：论文库、PDF 与 Markdown 笔记并排、每篇论文一个专属 AI 会话。高亮与框选截图自动写入笔记；划词 Ask AI 附带页码与选段；笔记可原地编辑、自动保存；多个会话可汇总成 Summary。
 - [piaomiaozhilei/dsh-sacc-translator#dsh-sacc-translator-cpu](https://github.com/piaomiaozhilei/dsh-sacc-translator/tree/main/packages/cpu) — 翻译 CPU：Windows x64 专属翻译界面，侧栏独立入口，支持工作台／聊天切换、原文与译文双栏、尽量保留原格式的文档翻译、屏幕框选翻译及最近记录，复用宿主模型、语音输入与预览。使用 CPU OCR，无需 NVIDIA 运行库。不要同时启用 CPU 与 CUDA 两个版本。
 - [piaomiaozhilei/dsh-sacc-translator#dsh-sacc-translator-cuda](https://github.com/piaomiaozhilei/dsh-sacc-translator/tree/main/packages/cuda) — 翻译 CUDA：Windows x64 专属翻译界面，侧栏独立入口，支持工作台／聊天切换、原文与译文双栏、尽量保留原格式的文档翻译、屏幕框选翻译及最近记录，复用宿主模型、语音输入与预览。文档 OCR 支持 CUDA 加速，无兼容 GPU 时回退 CPU；屏幕 OCR 使用 CPU。不要同时启用 CPU 与 CUDA 两个版本。
-- [PinkyKan/dsh-plugin-readme-zh](https://github.com/PinkyKan/dsh-plugin-readme-zh) — 把已安装插件的文档翻译成简体中文：README 按章节翻译并持久缓存，插件列表行写入 locale 中文侧文件，两者都原生渲染中文。
+- [PinkyKan/dsh-plugin-readme-zh](https://github.com/PinkyKan/dsh-plugin-readme-zh) — 把已安装插件的文档翻译成简体中文：README 按章节翻译并持久缓存；另有默认关闭的可选 metaSidecars 模式，会为每条插件列表行写入 locale/zh.json 侧文件，让列表原生渲染中文。
 - [poiuyjie/dsh-md-preview](https://github.com/poiuyjie/dsh-md-preview) — DSH Web 端可停靠的 Markdown 预览面板：与对话并排展示，会话级「最近打开 .md」列表，本地相对路径图片可直接渲染；点击对话中的 .md 引用改为并排预览而非唤起系统编辑器；跟随 shell 深浅色主题。
 - [PolinniZhong/dsh-knit](https://github.com/PolinniZhong/dsh-knit) — 把会话工作区里已有的 Markdown 文档、源码、图片与视频列进 DSH 侧边栏，按与当前对话的相关性排序。默认的词法模式用最近几条消息在本地与标题、摘要、正文做带 IDF 加权的匹配（BM25）—— 不调用模型、没有网络出口，内容不出本机。列表来自工作区扫描，而不是「最近打开记录」，所以重启 DSH 或新开会话都不会变空。排序结果组织成主要 / 辅助 / 相关三层的阅读顺序，每一条都写明可核验的理由（命中了哪个字段、被哪一篇引用），点一行即可就地预览：Markdown 按渲染后的样子显示、相对路径图片真实渲染、源码走宿主自带的语法高亮、视频走 HTTP Range 流式播放。同一份 Context Pack 也作为 knit_docs 工具交给 agent。后续版本陆续补上读取证据与生命周期（归因在读那一刻冻结）、固定 / 排除（排除先于检索生效，且可恢复）、关系证据（引用 / 导入 / 测试，带行号）与增量索引（重启后复用）。v0.23 起还多一条可选的混合检索：默认关闭，只有你自己配好 Ollama 或 OpenAI 兼容的 embedding 服务才会生效。它生效时，发出去的是你这句查询原话加上每篇候选文件的标题与摘要 —— Markdown 的摘要取自正文首段（不超过 60 字），代码的摘要是它所在的工作区相对目录，图片 / 视频贡献的是文件名；完整正文与绝对路径都不发送，指向本机服务（loopback）时内容不出这台机器。v0.24 起还能做变更关联：用一条只读的 git status（固定 argv、不走 shell、子进程环境白名单），配合同一套引用 / 导入 / 测试 / 提及证据，指出这次改动大概率该一起看哪些文件 —— 默认关闭。语义检索的收益仍待真 provider 实测，因此不承诺召回提升。
 - [PyModel/dsh-research-plugins#dsh-mcp-context7](https://github.com/PyModel/dsh-research-plugins/tree/main/packages/dsh-mcp-context7) — 接入 Context7 托管 MCP 服务，为 agent 提供随版本更新的库文档查询；默认免密钥可用。
