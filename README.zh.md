@@ -1414,6 +1414,7 @@ dsh plugin --profile web add dshmarket
 - [wenhaolin-svg/dsh-background](https://github.com/wenhaolin-svg/dsh-background) — 用本地图片替换 DSH 的纯色背景，并提供可拖动面板来调整铺满方式、模糊、遮罩和界面不透明度。
 - [weshopai/weshop-dsh-plugin](https://github.com/weshopai/weshop-dsh-plugin) — 电商可视化工作区：在无限画布上完成产品图、虚拟试穿、背景处理与视频生成，并与 Harness 对话实时同步。
 - [wf-ping/dsh-message-injector](https://github.com/wf-ping/dsh-message-injector) — 预设消息注入内容组合，每条消息自动注入输入框首行。
+- [Wfssll/dsh-three-pane](https://github.com/Wfssll/dsh-three-pane) — 在聊天左侧显示可独立开关的原生文件栏，支持本地和 SSH 工作区的文件操作与远程 @ 补全，文件继续由右侧原生侧栏预览。
 - [wfz2006/dsh-status-bar#dsh-status-bar](https://github.com/wfz2006/dsh-status-bar/tree/main/packages/dsh-status-bar) — Windows 11 x64 上的 DSH 悬浮玻璃状态栏：常驻胶囊显示本地 DSH web profile 的会话进度、当前步骤与待处理审批，可展开速览与详情；审批卡在 DSH 返回正式回执前保持只读，连接官方 Desktop 应用属实验性、未验收。
 - [WhatCannotBeSaid/dsh-im-workspace-buttons](https://github.com/WhatCannotBeSaid/dsh-im-workspace-buttons) — 在官方「工作区」标题行上，为每个已接入账号的 dsh-im 通道添加一个 28x28 图标按钮。点击后侧栏切到该通道视图，只显示它的会话、隐藏其余所有行；再次点击回到官方列表。只有已接入账号的通道才会出现按钮。
 - [WhatCannotBeSaid/dsh-session-eva-status](https://github.com/WhatCannotBeSaid/dsh-session-eva-status) — 按官方状态给 DSH 侧栏会话行染色，配色取自福音战士：等你处理的会话为蓝色左轨，主视图打开的那条为红色左轨，已结束但未查看为紫色左轨，置顶行的标题为静态彩虹。左侧轨道按模式分档——暗档保留原色，亮档换成对浅底 ≥4.5:1 的压暗变体——分档读的是 DSH 自己的暗色标记；未读的紫色轨道两种模式共用。只读取官方 Client 服务，自身不持有状态、不轮询，也没有宿主侧代码。
@@ -2180,6 +2181,7 @@ dsh plugin --profile web add dshmarket
 - [dingyi580/dsh-plugin-gemini-theme](https://github.com/dingyi580/dsh-plugin-gemini-theme) — Gemini 风格皮肤，用一张叠在 --dsw-* 令牌之上的样式表重塑对话区底色、侧栏胶囊行、首屏问候语与输入框，明暗主题都覆盖。
 - [dirtywork22/dsh-client-ui-skin-bayern](https://github.com/dirtywork22/dsh-client-ui-skin-bayern) — 拜仁慕尼黑主题的 dsh Web 皮肤：主场红/客场白双配色画布，19 名一线队球员的真实赛场照背景，外加球员球衣、阵容号码墙、安联球场、纯色四种程序绘制背景，可切换球员与强调色。
 - [DocJlm/dsh-arknights#pramanix-eyjafjalla](https://github.com/DocJlm/dsh-arknights/tree/main/skins/pramanix-eyjafjalla) — DSH Web 明日方舟同人皮肤“初雪和小羊”，包含昼夜星海庭园背景与双角色布局。
+- [dracula/deepseek-harness](https://github.com/dracula/deepseek-harness) — 用官方 DeepSeek 移植版配色给 DeepSeek Harness Web GUI 换肤：覆盖产品 alias token、侧栏/输入框/菜单的模块专属 token 与 shiki 语法色，宿主侧首帧注入，不会先闪内置配色，可在「设置 → 通用设置」开关。
 - [dreamtao2199/dsh-colors](https://github.com/dreamtao2199/dsh-colors) — 22 套仅浅色配色（Pantone / 中国传统 / 莫兰迪）与 14 种可叠加的表面效果，含十二时辰轮换、手动选色优先到时段边界、工作区绑定、会话颜色标记，以及设置页内的昵称与内联头像编辑。
 - [dsh-plugins/dsh-thought-buddy](https://github.com/dsh-plugins/dsh-thought-buddy) — 在「Deep diving...」状态提示前，放一只动态小伙伴——GrokBot 风格动画头像，状态文字还会同步打字机变换。
 - [du-u-uck/DSH-Transparent-UI-Plugin](https://github.com/du-u-uck/DSH-Transparent-UI-Plugin) — Aqua 玻璃质感主题：云母/兼容双模式、可调模糊与磨砂、流体/壁纸背景、背景亮度、粒子鲸鱼点缀，一键关闭即还原原生界面。
@@ -4404,6 +4406,7 @@ dsh plugin --profile web add dshmarket
 - [maddogfinance/dsh-trading](https://github.com/maddogfinance/dsh-trading) — 只读交易研究工作台 bundle：带类型的行情数据接缝（含 CSV 参考数据源）、多周期指标 regime 快照与 OHLCV 工具、dsh web 交互式 K 线卡（模型标注需溯源并经价格区间校验）、以及在 tools/pre-execute 拦截下单形工具调用的 risk-guard。
 - [mafeis/dsh-net-proxy](https://github.com/mafeis/dsh-net-proxy) — 让 agent 的网络请求走本机 HTTP/CONNECT/SOCKS5 代理。
 - [MagicTangOps/dsh-insurance-advisor](https://github.com/MagicTangOps/dsh-insurance-advisor) — 个险代理人的展业工作流：P1-P5 产品分级与客户风险等级匹配、按回执签收日推算犹豫期的保单台账、双录五环节校验，含 10 个工具与 5 个技能。
+- [MagneticLine/dsh-cyber-amber](https://github.com/MagneticLine/dsh-cyber-amber) — 在 Windows x64 上下载视频，或将链接及本地片段制作为可指定体积上限的 GIF。
 - [Making-acid/dsh-plugin-comfyui](https://github.com/Making-acid/dsh-plugin-comfyui) — 让 DeepSeek Harness 用本机 ComfyUI 真正生图——自动查找或启动本地服务，在对话里完成文生图并附图。
 - [margbug01/dsh-ma-plugins#dsh-oracle](https://github.com/margbug01/dsh-ma-plugins/tree/main/dsh-oracle) — 强制只读、会脱敏的第二意见子代理。
 - [mario03690/dsh-netcafe](https://github.com/mario03690/dsh-netcafe) — 托管工具服务器（MCP）：发票与银行流水提取并做代码内算术校验、按整数分对账、PDF 与表格转换、SQL 方言转写，以及从中国移动骨干网实测大陆可达性。
