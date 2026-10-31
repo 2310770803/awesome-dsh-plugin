@@ -775,6 +775,7 @@ dsh plugin --profile web add dshmarket
 - [joshua05100413-cmd/dsh-AcidCore-plugins#dsh-composer-meter](https://github.com/joshua05100413-cmd/dsh-AcidCore-plugins/tree/main/dsh-composer-meter) — dsh 输入框计量：输入框下方的 pill 显示草稿字数、预估 token 与本会话估算费用（内置 DeepSeek 官方价目，高峰/空闲与 Flash / Pro 自动换价，可自定义）；点开面板可看 token 明细、最近 6 份草稿快照（保险箱）与草稿清洗，写回只走宿主的 setDraft 接口。
 - [Js2Hou/dsh-mcp-manager](https://github.com/Js2Hou/dsh-mcp-manager) — DSH 网页 MCP 可视化管理插件：在「设置 → MCP」中查看/新增/删除/启停 MCP 服务器，实时显示连接状态与工具数。
 - [jsdvjx/dsh-strata](https://github.com/jsdvjx/dsh-strata) — 滚动条槽位里的会话缩略图：按事件类型着色的等比色块、用户与失败锚点、滚到顶自动补载历史、悬停线索墙铺开全部发言，附近/中/全三档地图尺度切换。
+- [jue5hen/dsh-window-size](https://github.com/jue5hen/dsh-window-size) — 在设置页设置 DeepSeek Harness 桌面版启动时的窗口大小，内置 4:3、16:9、16:10 比例预设，支持保存最多 12 个自定义预设。
 - [juliankang4/dsh-locale-ko](https://github.com/juliankang4/dsh-locale-ko) — 给 DeepSeek Harness 的「设置 - 通用设置 - 语言」加入韩语（한국어），翻译 dsh 0.2.0-rc.2 与 0.2.1-alpha.2 Web UI 的全部 2,775 条文案，包括实验功能。dsh web 与桌面应用均可使用。
 - [juliankang4/dsh-ui-scale](https://github.com/juliankang4/dsh-ui-scale) — 将 DeepSeek Harness 整个界面（包括菜单和弹窗）缩放到 50% 至 200%，在「设置 - 通用设置」中用滑块、百分比输入或预设调整。dsh web 与桌面应用均可使用，桌面应用本身没有缩放功能。
 - [Justin-Mai/dsh-stock-view](https://github.com/Justin-Mai/dsh-stock-view) — A 股 / ETF / 港股 / 美股 / 加密货币行情盯盘插件：在 DeepSeek Harness（DSH）Web 界面右上角显示可折叠、可拖动的弹窗，同时盯多个市场——实时行情、分时与日/周/月 K 线（含均线）、买卖目标价、分组管理（切换、拖动排序、重命名、删除）、跨市场搜索、明暗主题。fork 自 Awu12277/dsh-stock-watch，新增东方财富美股行情与 OKX 现货加密货币行情。
@@ -3365,6 +3366,7 @@ dsh plugin --profile web add dshmarket
 - [sluminositys/dsh-nested-followups](https://github.com/sluminositys/dsh-nested-followups) — 从任意层级的已完成回答持续创建隔离分支，主会话始终不受影响。
 - [snow-The/dsh-session-handoff](https://github.com/snow-The/dsh-session-handoff) — 会话交接与上下文管理：导出/恢复结构化交接文档，让新会话无缝续接；并集成了主动上下文裁剪（acp_* 工具，基于官方 compaction API 与模型自写摘要）。
 - [SocFeng/dsh-query-jump](https://github.com/SocFeng/dsh-query-jump) — DSH WebUI 会话提问导航：对话区右缘淡色短横线，悬停列出真实用户提问，点击跳回对应气泡。
+- [solstice621/dsh-plugin-projectless](https://github.com/solstice621/dsh-plugin-projectless) — 无需选择项目文件夹即可开始对话，为每次聊天分配持久工作目录，并沿用 Harness 原生会话存储。
 - [Som2233/dsh-session-task-tags](https://github.com/Som2233/dsh-session-task-tags) — 为每个会话标记长期任务或短期任务、记录创建时的 Agent 模式，并在你设定的归档时间窗结束后自动归档。
 - [southsnowL/dsh-bulletin#dsh-bulletin-dispatch](https://github.com/southsnowL/dsh-bulletin/tree/main/plugins/dsh-bulletin-dispatch) — 同一台电脑上会话之间的「单子」：会话用标题里的编号前缀表明自己属于哪张桌；单子投给某张桌，由那张桌最先开始干活的那个会话取走 —— 桌是地址，路过的会话不会收到它。
 - [SpaceRelay/dsh-subagent-control#dsh-find-session](https://github.com/SpaceRelay/dsh-subagent-control/tree/main/dsh-find-session) — 在当前对话或所有会话里按关键词查找，命中可高亮、可跳转。
