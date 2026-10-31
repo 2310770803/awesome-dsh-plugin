@@ -1669,6 +1669,7 @@ dsh plugin --profile web add dshmarket
 - [zhubaohi/dsh-gpu-pulse](https://github.com/zhubaohi/dsh-gpu-pulse) — DSH Web 界面内置的悬浮 GPU 监控：紧凑可拖动的条带，每张独立 GPU 一行（精确名称、利用率、显存、温度、功耗），数据来自 nvidia-smi；侧边面板或侧边卡片打开时保持在最上层；驱动支持时还列出显存占用最高的进程；无 NVIDIA 驱动的机器会退化为 n/a 胶囊。
 - [zhuifengqug/dsh-adaptive-reasoning](https://github.com/zhuifengqug/dsh-adaptive-reasoning) — 炭灰余烬风格的 DSH Web 像素推理强度滑块：以近黑木炭、暗红裂纹和橙红高温核心呈现 4px 像素化 WebGL 火焰，拖动时逐档点燃；支持 0–100 无极拖动、16ms 节流写入与松手吸附。
 - [zhujiuyi/dsh-leftpanel](https://github.com/zhujiuyi/dsh-leftpanel) — 列出所有可以出现在左侧菜单里的功能，并在设置中逐个隐藏或显示面板入口。
+- [zhuran305-web/dsh-cet-vocab](https://github.com/zhuran305-web/dsh-cet-vocab) — 四六级背单词悬浮窗，模型思考时随手背：窗口可拖动、可最小化并记住位置；内嵌 ECDICT 提取的 5805 词；翻卡三键评分（认识/模糊/不认识）与形近词干扰的选择题两种模式；艾宾浩斯间隔复习，配到期复习与加练；每日新词数可调；发音取在线词典的真人美式与英式录音，断网时回落本地文字转语音；可开启「会话运行时自动弹出」。进度与窗口位置保存在浏览器配置里。
 - [zhuran305-web/dsh-feedback-combined](https://github.com/zhuran305-web/dsh-feedback-combined) — 一键点赞/点踩反馈 UI，评分摘要自动注入模型上下文。
 - [zhxnix/dsh-sidebar-annotations](https://github.com/zhxnix/dsh-sidebar-annotations) — 为 DSH 提供网页与小程序元素注释、折叠注释附件及源码定位。
 - [Zian-anson/dsh-prompt-seed](https://github.com/Zian-anson/dsh-prompt-seed) — 输入框有内容时单次调用优化草稿，空白时预测下一句；两类任务独立，支持草稿保护、结果预览和原文恢复。
@@ -8060,6 +8061,7 @@ dsh plugin --profile web add dshmarket
 - [Wodexinhaoleng-Kasssa/dsh-reader](https://github.com/Wodexinhaoleng-Kasssa/dsh-reader) — DSH Web GUI 在线小说阅读器：书源搜索、聊天式阅读界面、整本下载 TXT 到本地。
 - [WU079/dsh-sts2-agent](https://github.com/WU079/dsh-sts2-agent) — 让 AI 自己玩《杀戮尖塔 2》：截图＋鼠标键盘工具、本地牌表速查，还有一份能读的游玩日志。需 Windows 与 Python 3.10 及以上版本并安装 Pillow。
 - [wuyad/dsh-client-ui-cat#cat-plugin](https://github.com/wuyad/dsh-client-ui-cat/tree/main/cat-plugin) — 一只在 DeepSeek Harness 界面里游荡的小猫，沿文字边缘行走、打盹、瞬移、摔下台阶，还会拉粑粑等你清理。
+- [wz20/dsh-dafeiyu-dot](https://github.com/wz20/dsh-dafeiyu-dot) — 提供角色配置、本地情绪语音、文件持久记忆、QQ 消息与半双工语音通话的鲸鱼娘陪伴插件。
 - [x-cores/dsh-chess-game#chess-float](https://github.com/x-cores/dsh-chess-game/tree/main/packages/chess-float) — 可拖动悬浮窗双人国际象棋，完整规则、悔棋与 PGN 棋谱导出。
 - [x-cores/dsh-mine-game#mine-float](https://github.com/x-cores/dsh-mine-game/tree/main/packages/mine-float) — 可拖动悬浮窗排雷游戏，首翻安全布雷、标旗、双击快开与计时。
 - [X1A0BAN/dsh-survival-mode](https://github.com/X1A0BAN/dsh-survival-mode) — 生存模式：全局共享一条饱食度与生命，模型每步思考消耗饱食度，饿死后全局工具被冻结，通过 MC 采集小游戏获取食物喂食复活。
