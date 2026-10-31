@@ -1262,6 +1262,7 @@ dsh plugin --profile web add dshmarket
 - [sevenhsu7/dsh-codex-like-markdown](https://github.com/sevenhsu7/dsh-codex-like-markdown) — 让右侧栏的 Markdown 预览就地可编辑：文档保持自带渲染器的排版，点段落、标题、列表、代码围栏或表格单元格时光标落在点击处，只有被编辑的那段经 ctx.fs.writeText 写回，并可带上读取时的版本作为护栏。
 - [SeverusZh/dsh-skills-mcp-group-manager](https://github.com/SeverusZh/dsh-skills-mcp-group-manager) — 将已安装的技能分组管理、独立开关 MCP 服务器：按启用分组过滤模型可见的技能目录（并集去重），全部操作集中在左侧面板。
 - [Sevyn-Star/dsh-receipt](https://github.com/Sevyn-Star/dsh-receipt) — 在左下角显示这一场里，失败或空结果之后又用同一组参数重试花了多少钱。
+- [sfunction-guo/dsh-screenshot](https://github.com/sfunction-guo/dsh-screenshot) — 输入框旁的截图标注工具：冻结屏幕、拖框选区、就地标注，完成后直接插入输入框。
 - [SHAN5246992ZHUI/dsh-select-translate](https://github.com/SHAN5246992ZHUI/dsh-select-translate) — 在任意 Windows 应用里划词，鼠标旁弹出只含译文的置顶卡片；译文流式出现并跟随最新一行，单次上限 15000 字。仅 Windows。
 - [ShawnRen57/dsh-whale-trail](https://github.com/ShawnRen57/dsh-whale-trail) — 本地优先的 DeepSeek Harness 成就系统：正常使用即点亮 7 个系列共 67 枚印章徽章，完成 9 段航程并收集 36 件海洋收藏，解锁可配置的 ASCII 水族馆，还能把五枚珍藏导出为 PNG 航海名片或可离线游动的 HTML。无需打卡、不新增模型调用、不上传聊天内容。
 - [shengyvself/dsh-reading-pad](https://github.com/shengyvself/dsh-reading-pad) — DSH 沉浸式只读阅读板：模型用 `reading_pad_send` 把已排版 Markdown 推到原生右侧栏「📖 阅读板」tab，三套低蓝光主题、30em 限宽排版；也可只读浏览当前写作工程的章节。
@@ -4135,7 +4136,7 @@ dsh plugin --profile web add dshmarket
 - [fan56/dsh-subagent-registry](https://github.com/fan56/dsh-subagent-registry) — 把本地定义的自定义 agent 注册成 dsh 可调用的 subagent：主模型通过 use_agent 工具按名字派活，每个 agent 以独立人格运行，支持断点续跑。
 - [fangchenghao/dsh-web-search](https://github.com/fangchenghao/dsh-web-search) — 免密钥网页搜索：一个 web_tools 入口、八个 action，覆盖多查询、日期窗口、包、论文、仓库、平台、正文读取、引用研究、缓存检索与引擎健康；融合八个引擎，并提供给其他 Agent 使用的 stdio MCP server。
 - [Fantasality/dsh-origin-plugin](https://github.com/Fantasality/dsh-origin-plugin) — 通过 MCP 在 AI 对话里驱动 OriginLab Origin 科学绘图与分析：62 个工具。模态对话框看门狗、LabTalk 破坏命令门禁、释放/重连、拟合初值/固定参数/加权、细粒度图与工作表编辑、矩阵工具、FigureSpec 声明式 YAML（可 diff 可重放）、MCP Resources 只读会话快照、matplotlib 图桥接、PowerPoint 组图、Graph Gallery 模板搜索、EPS 导出、文件访问白名单、视觉基准回归，以及带确定性反读验证的可编辑 OPJU 交付。
-- [fanyingnie2163663/dsh-whale-care](https://github.com/fanyingnie2163663/dsh-whale-care) — 关心引擎：教 agent 怎么真正关心一个人，天气是第一个来源——个性化播报、穿衣带伞建议、每日主动关心、极端天气预警与提醒。提醒与预警在 agent 醒来时评估，可由 qq-bridge 这类宿主定时唤醒；偏好只存本机。
+- [fanyingnie2163663/dsh-whale-care](https://github.com/fanyingnie2163663/dsh-whale-care) — 关心引擎：教 agent 怎么真正关心一个人，天气是第一个来源——体感温度与湿度、穿衣带伞建议、每日主动关心（可开关、跟随作息）、极端天气预警与提醒。提醒与预警在 agent 醒来时评估，可由 qq-bridge 这类宿主定时唤醒；偏好只存本机。
 - [fashionmascherine-svg/dsh-polymarket-knowhow](https://github.com/fashionmascherine-svg/dsh-polymarket-knowhow) — 面向 DeepSeek Harness 与 Claude Code 的 Polymarket 工具包：Gamma/CLOB/Data-API 行情工具（DSH 内 31 个模型工具，MCP 只暴露只读子集）、需显式开启的带鉴权交易工具、WebSocket 推流服务，以及内置的 Polymarket 知识技能。
 - [feng-yifan/dsh-plugins#dsh-enter-plan-mode](https://github.com/feng-yifan/dsh-plugins/tree/main/packages/dsh-enter-plan-mode) — 进入计划模式工具：给模型一个可调用的 `dsh_enter_plan_mode_enter_plan_mode`，把当前会话切进计划模式，与内置的 `exit_plan_mode` 配对，形成“先规划、后评审”的闭环。
 - [fire-disposal/dsh-mojibake-interceptor](https://github.com/fire-disposal/dsh-mojibake-interceptor) — DSH 乱码拦截器 bundle：写入前特征值/编码回环检测乱码并复查放行（原样重试即通过），pwsh 写入编码执行前审计（ANSI/GBK/UTF-16/默认编码），Windows 与中文场景优先。
