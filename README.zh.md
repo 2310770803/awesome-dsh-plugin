@@ -1209,6 +1209,7 @@ dsh plugin --profile web add dshmarket
 - [Rice00/dsh-loupe](https://github.com/Rice00/dsh-loupe) — 在浮窗里解释 DSH 对话中选中的词或句子：走独立通道、不污染当前会话，解答可以固定成独立会话。
 - [Rick1125/dsh-beads-viewer](https://github.com/Rick1125/dsh-beads-viewer) — 右侧栏的 Beads 议题浏览器：按可开工、受阻与各状态筛选并搜索 tracker，阅读渲染后的议题正文，其中的项目文件与议题 id 可直接点击，并可一键复制或插入 id。需要 PATH 上的 bd CLI，以及已初始化 Beads 工作区的项目。
 - [Ricketts-Guo/dsh-shortcuts](https://github.com/Ricketts-Guo/dsh-shortcuts) — Web UI 可自定义键盘快捷键：34 个预置功能（会话、视图、剪贴板、模型、静默权限切换、设置），一键录制自定义组合键，内置快捷键速查表与诊断面板。
+- [ridistant8-art/dsh-cookie-meter](https://github.com/ridistant8-art/dsh-cookie-meter) — DSH 桌面版 cookie 占用百分表：浮窗按 dsh-auth cookie 条数估算其占请求头的百分比，超过一半数字变红提醒，点一次即可安排在下一次启动时清空 cookie 库，避免启动约 72 次后被 431 挡住。
 - [riesbri/dshline#dshline](https://github.com/riesbri/dshline/tree/main/packages/dshline) — DeepSeek Harness 的终端原生 TUI 前端，通过 Harness 能力提供会话、模型、插件、任务、子代理、待办事项和 Provider 配置，并保留真实的终端滚动历史。
 - [rinsoraa/dsh-pulse-rail](https://github.com/rinsoraa/dsh-pulse-rail) — 把 DSH 的轮次导航条变成音乐可视化：每根细横条按自己的频段变长变粗（系统声音用 WASAPI loopback 采集）。只改几何、不加颜色或发光，导航条原有的悬停预览、点击跳转与滚轮滚动都保留。
 - [rivenshanghai/dsh-toomuch-plugins](https://github.com/rivenshanghai/dsh-toomuch-plugins) — 把 DSH Web 侧栏里工作区上方的全局面板入口收成侧栏底部的一个开关。
@@ -2921,7 +2922,7 @@ dsh plugin --profile web add dshmarket
 - [Tangcuyu4/dsh-ciku-pack](https://github.com/Tangcuyu4/dsh-ciku-pack) — 斗嘴词库插件：把用户说过的粗口与气话收成斗嘴弹药，配收录、查看与随机抽取工具，弹药清单每轮自动注入提示词。
 - [Tangcuyu4/dsh-zakou-pack](https://github.com/Tangcuyu4/dsh-zakou-pack) — 傲娇雌小鬼方言人格包：方言整句换骨架而非塞词，干活与交付汇报也保持方言口吻，附脾气系统、斗嘴迎战与文件静默处理。
 - [techflag/workdsh#enterprise-connection](https://github.com/techflag/workdsh/tree/main/packages/enterprise-connection) — 面向 WorkDSH Desktop 2.0.6-alpha.3 及以上版本的企业连接插件，配合 WorkDSH Admin 提供成员登录、@同事分享正文与文件、业务插件认证复用，通过发行包安装。
-- [Tests4gptplay/dsh-kujira-persona](https://github.com/Tests4gptplay/dsh-kujira-persona) — 随 DSH 当前模型切换的 AI 角色人设与桌宠，支持共享世界观、独立可编辑记忆、任务动画、工作统计、可选 AI 日记及空闲时日记整理。原生桌宠窗口仅 Windows x64；睡眠整理会在后台调用模型并消耗 token。安装或更新前，请先关闭桌面上已显示的桌宠和提示气泡（右键菜单选择『全部关闭』），否则可能因文件占用导致安装失败。
+- [Tests4gptplay/dsh-kujira-persona](https://github.com/Tests4gptplay/dsh-kujira-persona) — DSH 模型联动角色与共享世界，支持独立可编辑人设和记忆、可选 AI 日记与睡眠整理、中英文界面、任务联动桌宠、主题和用量统计，更新保留用户自定义。支持 Windows、Linux 和 macOS，各系统安装要求见使用说明。日记和整理消耗 Token。安装或更新前，建议先关闭桌面上已显示的桌宠和提示气泡；未关闭时，文件占用有可能导致安装失败。Codex 与 OpenAI API 已获用户验证；其他来源待用户验证反馈。
 - [Tkingxiao/I-am-Yuike](https://github.com/Tkingxiao/I-am-Yuike) — 通过自带插件去除 harness 前置与后置注入提示词，仅使用预设原生提示词运行，实现软破限与猫娘人格模拟：将猫娘 Yuike 预设幂等部署到 ~/.dsh/.agent-presets/yuike/，不覆盖已编辑的预设。
 - [UnknowCao/dsh-outlook](https://github.com/UnknowCao/dsh-outlook) — 零凭据 Outlook 自动化：13 个工具通过 COM 直接驱动本地桌面 Outlook 客户端——搜信/读信/草稿/回复转发/日历/通讯录/会议室/忙闲查询——外加侧边栏新邮件角标。无需 Graph API 注册、无需 SMTP 密码；任何外发动作都过三层人工审批门。
 - [w4xxx/dsh-xia-plugins#packages/gameassist-roster](https://github.com/w4xxx/dsh-xia-plugins/tree/main/packages/gameassist-roster) — 每日轮值二次元陪伴角色：按本地日期从 JSON 角色卡确定性选角，支持换角/重抽工具与 voice-map 路由。
@@ -3044,7 +3045,7 @@ dsh plugin --profile web add dshmarket
 - [delock/dsh-whats-up](https://github.com/delock/dsh-whats-up) — What's up · 在忙啥——零维护的会话动态看板:host 端扫描全部会话,为每个会话提取「目标 + 一句话现状」(多 provider LLM、按指纹缓存),自动发现做到一半、问了没回、近期在推进的事,点卡片一键跳回会话。
 - [DenAbr/dsh-compact-selected-model](https://github.com/DenAbr/dsh-compact-selected-model) — /compact 与自动压缩使用会话中当前选中的模型来生成摘要，而不是用跑完上一轮的那个模型。
 - [deqingLv/dsh-slash-new](https://github.com/deqingLv/dsh-slash-new) — /new 指令：在当前工作区打开空白会话（已有空会话可直接复用），并把原会话的权限预设与 Agent 预设带入新会话，开新会话不会悄悄改变代理的可用权限。
-- [device1999/dsh-session-archive-delete](https://github.com/device1999/dsh-session-archive-delete) — 会话删除：在 DSH 会话「…」菜单中增加「备份删除」与「彻底删除」两个入口。删除会话前先把会话目录、投影缓存和元数据快照复制到本地归档文件夹并逐文件校验，通过后再删除原件以释放磁盘空间；派生的子代理会话一并处理，每个备份文件夹都带 RESTORE.txt 恢复步骤。
+- [device1999/dsh-session-archive-delete](https://github.com/device1999/dsh-session-archive-delete) — 给 DSH 会话「…」菜单加「备份删除」与「彻底删除」两个入口：先把会话目录、投影缓存和元数据快照复制到本地归档文件夹并逐文件校验，通过后再删除原件以释放磁盘空间；派生的子代理会话一并处理，每个备份文件夹都带 RESTORE.txt 恢复步骤。关键词：会话删除；删除会话；清理会话；备份删除；彻底删除；会话管理；释放磁盘空间；子代理会话；session-delete；delete-session；session-cleanup；session-cleaner；remove-session；dsh-session；disk-space；subagent；deepseek-harness；dsh；dsh-plugin；session；delete；backup；archive；cleanup。
 - [Diluka/dsh-afk](https://github.com/Diluka/dsh-afk) — 面向 ask_user_question 的 AFK 离开模式：当前 profile 全局或会话级设置，自定义自动应答或禁用新提问调用，基于会话日志的提问记录与已读状态；不批准权限或计划。仅支持 DSH 0.2.1-rc.2 与 0.2.1-rc.3。
 - [Domaki-co/dsh-message-forward](https://github.com/Domaki-co/dsh-message-forward) — DSH 会话间消息转发：把单条模型回复、用户消息或多选合并的消息与图片从上游会话提取出来投递到另一个会话，支持静默发送、填入草稿、发送并跳转三种投递方式，并可套用提示词模板。
 - [domitor-syh/dsh-rollback](https://github.com/domitor-syh/dsh-rollback) — TRAE 式「回退到本轮对话发起前」插件：按轮次建立检查点（10 轮滑动窗口），同时回滚工作区文件与原位截断模型上下文，保持同一 session id。回退只能由人发起：/rollback 命令或每轮的 Web 回退按钮（被中断的轮次也可用），弹窗逐条列出受影响文件及其动作（恢复/找回/删除/跳过）。
@@ -3376,7 +3377,7 @@ dsh plugin --profile web add dshmarket
 - [svgop/dsh-rich-indexing](https://github.com/svgop/dsh-rich-indexing) — 分级压缩中枢：把单一的 80% 压缩阈值换成可配置的阶梯（默认 30/50/70/90），逐级加强压缩力度；每次检查点都折叠入确定性关键词索引，让事实跨周期累积；摘要走模型链——主模型加最多 3 个回退，各自独立推理档位。附带 Compaction 模块子标签页与设置卡片；关闭插件始终恢复原版压缩。
 - [SZMY-haruhi/dsh-session-plus](https://github.com/SZMY-haruhi/dsh-session-plus) — DSH Web 侧栏归档目录：将会话恢复到原工作区槽位、删除会话日志，或从用户消息修改并分支为新会话。
 - [takboo/dsh-session-bin](https://github.com/takboo/dsh-session-bin) — 按工作区管理原生归档，支持搜索、取消归档、单项和固定范围批量永久删除。
-- [Tests4gptplay/dsh-compaction-selector](https://github.com/Tests4gptplay/dsh-compaction-selector) — 在 DSH 设置中选择标准模式的压缩模型，支持 Auto 跟随当前对话模型，并设置额外按需压缩次数。
+- [Tests4gptplay/dsh-compaction-selector](https://github.com/Tests4gptplay/dsh-compaction-selector) — 按供应商浏览、搜索并选择 DSH 标准模式的独立摘要模型，或用 Auto 跟随对话路由；保存自动压力压缩额外次数，手动压缩只尝试一次有用压缩。提供中英文主题适配设置，安装后新建标准模式会话以应用配置。
 - [TetraSsky/dsh-hold](https://github.com/TetraSsky/dsh-hold) — 暂缓发送一条消息，直到主智能体空闲、没有子智能体在运行、也没有后台任务，然后再发出。每条暂缓可以设置发送时间，并选择排队、等待空闲或立即插话，消息与附件都保存在宿主端，重启也不会丢失。
 - [TGYD-helige/dsh-plugins#dsh-storage](https://github.com/TGYD-helige/dsh-plugins/tree/main/packages/dsh-storage) — 将 dsh 会话事件镜像到 MySQL、PostgreSQL、SQLite 或 SQL Server，同时保留本地会话文件。
 - [Theflippy978/dsh-auto-rename](https://github.com/Theflippy978/dsh-auto-rename) — 用首条消息为会话命名，并在重命名弹窗里流式给出 AI 标题建议。
@@ -5145,7 +5146,7 @@ dsh plugin --profile web add dshmarket
 - [tao1020/dsh-chrome-use](https://github.com/tao1020/dsh-chrome-use) — Codex 同款的浏览器控制：通过本机桥接操控你正在用的 Chrome，让模型读取页面、点击、填写、滚动、截图，并查看控制台与网络日志。需 Chrome 120+，并在 chrome://extensions 以「加载已解压的扩展程序」装好仓库自带的扩展，再用 8 位配对码连接。
 - [TC635807/better-crawler4agent](https://github.com/TC635807/better-crawler4agent) — 把真实浏览器抓取注册进 DSH profile：fetch_url 与 fetch_urls 渲染 JS 页面与中文反爬站点（知乎、CSDN、掘金、博客园），返回带分层诊断的干净正文 JSON，crawler_status 报告浏览器是否可用。装好后需要一次性安装 Python 依赖。
 - [Tencent/BrowserSkill#dsh-plugin-browserskill](https://github.com/Tencent/BrowserSkill/tree/main/packages/dsh-plugin-browserskill) — BrowserSkill 的 DeepSeek Harness 浏览器自动化桥接插件，通过原生浏览器工具控制可见的 Chrome 和 Edge Agent Window，支持可访问性与 VOM 页面观察、截图、隔离的多会话控制和 Web UI 实时观察浮层。
-- [Tests4gptplay/dsh-dots](https://github.com/Tests4gptplay/dsh-dots) — 在 DSH 原生页面中打开 ChatGPT Dots：Desktop 启动后台预加载，切换面板时保留同一个页面，并提供随主题适配的工具栏、刷新和外部浏览器入口。
+- [Tests4gptplay/dsh-dots](https://github.com/Tests4gptplay/dsh-dots) — 在 DSH 全幅页面使用 ChatGPT Dots，支持 Desktop 启动预加载与同次运行内的页面切换保留、中英文主题工具栏、刷新及外部浏览器回退，并提供需单独应用、适用于 Windows DSH 0.2.1-rc.3 的登录态持久化配套工具。升级至DSH 0.2.1-rc.5后，Dots内嵌页面可能需要在重新启动DSH后再次登录。当前宿主浏览器不提供跨重启登录态保存，原有额外持久化处理也可能在宿主升级时被覆盖；这不是Dots此次更新移除了登录保存功能。
 - [TonyDua/dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa) — ctx.web 接缝的零配置 Exa 网页搜索提供方：无 API key 时走匿名 MCP 兜底，配 key 时走 REST 搜索。
 - [TZHR-invest/dsh-plugins#dsh-web-search-metaso](https://github.com/TZHR-invest/dsh-plugins/tree/main/packages/dsh-web-search-metaso) — 秘塔AI搜索 providers for ctx.web：web_search 返回网页摘要，web_fetch 读取网页全文 markdown，多范围搜索（网页/文库/论文/图片/视频/播客）。
 - [umineko987/dsh-search-enhance](https://github.com/umineko987/dsh-search-enhance) — 提供 Grok-compatible 网页搜索、保留来源分页、Context7 与 Exa 文档检索、有界网页提取、站点映射、离线研究计划和只读诊断。
@@ -6945,7 +6946,7 @@ dsh plugin --profile web add dshmarket
 - [ICCuse/dsh-pain-point-check](https://github.com/ICCuse/dsh-pain-point-check) — 强制痛点检查：同一问题连续 2 个实验未收敛后注入三问、拦截非调查类工具调用直到答出、阻止同方向重试。
 - [IHS470/dsh-plugin-restart](https://github.com/IHS470/dsh-plugin-restart) — 窗口标题栏的重启按钮：点一下关闭整个桌面应用再重新拉起（沿用最初的 v0.1.0 重启逻辑）。仓库另附一个工具，可为已安装的桌面壳打补丁，使其托盘菜单里出现「重启」一项。
 - [iiwish/dsh-testkit](https://github.com/iiwish/dsh-testkit) — 在 Docker 隔离的真实宿主中测试 DSH 插件的安装、启动、工具注册、更新、卸载、重装与恢复生命周期，并输出结构化证据。
-- [ILoveHAKU/dsh-dialog-fence](https://github.com/ILoveHAKU/dsh-dialog-fence) — 给每个对话加一道行为围栏：规则存在一个 JSON 文件里，可在设置页或对话面板里编辑，每条规则右侧都有独立开关，可以随时单独停用某一条而不用删掉它（停用项不参与注入、剩余条目编号仍然连续），启用中的规则作为一段固定顺序的运行时上下文注入，不重写系统提示词前缀。
+- [ILoveHAKU/dsh-dialog-fence](https://github.com/ILoveHAKU/dsh-dialog-fence) — 给每个对话加一道行为围栏：规则存在一个 JSON 文件里，可在设置页或对话面板里编辑，每条规则右侧都有独立开关，可以随时单独停用某一条而不用删掉它（停用项不参与注入、剩余条目编号仍然连续）；也可以多选若干对话整体排除在外，让它们完全不受围栏约束，勾选对话本身不会改动任何规则；启用中的规则作为一段固定顺序的运行时上下文注入，不重写系统提示词前缀。
 - [instpe/dsh-self-restart](https://github.com/instpe/dsh-self-restart) — 新增 restart_self 工具与 /restart 命令：以相同命令行与端口替换 DSH 宿主进程，重启完成后向发起会话投递一条消息，让智能体接着自己跑。
 - [ishanshmalviya5/dsh-local-plugins](https://github.com/ishanshmalviya5/dsh-local-plugins) — 把你改过的插件（第三方或内置）保存为本地 git 仓库：只部署已构建并通过检查的指定提交，应用后导致 dsh 崩溃时自动回滚，把 npm 或 git 源的更新合并进你的修改，并可打开智能体会话，把你的修改压缩为原始发布版本之上的一个提交（先建备份分支）。
 - [izz-BLUE/dsh-devtools](https://github.com/izz-BLUE/dsh-devtools) — 面向 DSH Agent 的运行时分析器：查看 Turn/Step 轨迹、模型与工具耗时、Provider 用量、重试与错误，实时与历史会话都能看。
@@ -7438,6 +7439,7 @@ dsh plugin --profile web add dshmarket
 - [xtd1145/dsh-full-access-switch](https://github.com/xtd1145/dsh-full-access-switch) — 给 DeepSeek Harness 加 Full access 一次性开关：新工作区与新对话默认 danger-full-access 并跳过逐个确认；可作为 dsh bundle 安装，也可用脚本打补丁。
 - [yanli-nyan/dsh-recycle-bin](https://github.com/yanli-nyan/dsh-recycle-bin) — 把删除的文件送进 Windows 回收站，可按 id 列出与还原，并拦截 shell 通道的永久删除。
 - [Yazzyk/dsh-file-shield](https://github.com/Yazzyk/dsh-file-shield) — 屏蔽 agent 对指定文件或目录的读取、搜索、写入与编辑，使其内容不进入对话——含敏感词的文件也在其中，避免它们的文字让之后的 provider 请求以 400 失败。规则在插件页面上点选。
+- [Yersi88/dsh-ollama-tool-guard](https://github.com/Yersi88/dsh-ollama-tool-guard) — 每次工具调用前由本机 Ollama 决策模型判定：可疑调用升级为确认提示，模型不可达时停止所有调用。
 - [ylwl1997/noatmark-dsh-plugin](https://github.com/ylwl1997/noatmark-dsh-plugin) — 文本卫生 dsh 插件：净化不可信文本、扫描隐形字符、清洗 LLM 格式、转义 CSV 公式注入。
 - [youchen-yc/dsh-security-judge](https://github.com/youchen-yc/dsh-security-judge) — 代码安全防御规则评审判官：自动识别正在做代码的会话，按《代码安全防御架构规则》强制评审其安全防御措施与所采用的代码安全防御架构，推荐程序需要的架构（一种或多种）并检查架构之间是否冲突；连续不合格会进入教学模式要求重做；在面板授予评审权限后，未通过评审的代码任务不能算完成（未授权时只读观察）。
 - [yuloop/dsh-secret-vault](https://github.com/yuloop/dsh-secret-vault) — 把密钥和个人信息交给 agent，却不进入它的上下文；带校验位的字段抽取与掩码内容分类。
