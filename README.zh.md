@@ -613,6 +613,7 @@ dsh plugin --profile web add dshmarket
 - [gordan-code/dsh-jev-advisor](https://github.com/gordan-code/dsh-jev-advisor) — 为 DSH 选择题提供面向用户的 TypeSafe Jev 第二意见，默认按需询问、可选自动获取，展示推荐、概率和置信度，支持分歧提示、复制建议、一键采纳、按 profile 保存卡片布局、临时决策偏好、可选发送前预览与常见凭证遮盖，并提供本地健康检查和脱敏诊断复制。
 - [Gorkaseto/dsh-effort-picker](https://github.com/Gorkaseto/dsh-effort-picker) — 在输入框模型菜单底部固定推理强度滑块，无需进入子菜单即可切换思考档位，并为自定义模型自动补齐通用档位。
 - [Grampusworld/dsh-prompt-optimizor](https://github.com/Grampusworld/dsh-prompt-optimizor) — 一键把输入框草稿改写为更紧凑的提示词，再点一次还原原文；默认用 Harness 自带模型，也可接任意 OpenAI 兼容端点，润色提示词与长度、超时限制均可自行设置。
+- [GraptK/dsh-composer-enhance](https://github.com/GraptK/dsh-composer-enhance) — 用一次模型调用改写输入框草稿（或仅选中片段），参考最近对话，支持取消、回退、保真与长度校验，以及可选预览。
 - [GraptK/dsh-quick-restart](https://github.com/GraptK/dsh-quick-restart) — 在 DeepSeek Harness 桌面版账号菜单中加入「重启」项，带二次确认、进度与失败原因提示。
 - [gu040303-ai/dsh-prompt-enhancer](https://github.com/gu040303-ai/dsh-prompt-enhancer) — 在 DeepSeek Harness 中一键优化纯文本提示词，并提供可选的本地检查和句级审阅。
 - [GuanYang14700/dsh-hermes-panel](https://github.com/GuanYang14700/dsh-hermes-panel) — 把 Hermes 放进 DSH 右侧栏：启停网关和 dashboard，聊天旁边就能看 dashboard，再把 DSH 和 Hermes 接起来。仅 Windows；需已安装 Hermes。
@@ -3731,6 +3732,7 @@ dsh plugin --profile web add dshmarket
 - [moondrop12138/dsh-zcode-workspace-memory](https://github.com/moondrop12138/dsh-zcode-workspace-memory) — 把 ZCode 的工作区记忆移植到 DeepSeek Harness：每个工作区一份 Markdown 记忆目录（MEMORY.md 索引 + 一事实一文件），主会话开始时注入，每轮成功对话后由后台提取请求补充；左栏页面只读浏览已存文件。
 - [MoonlitDropOfBlood/dsh-memory-manager](https://github.com/MoonlitDropOfBlood/dsh-memory-manager) — ZCode 风格持久化项目记忆：设置内完整管理页、索引式注入与 agent 记忆工具。
 - [moononnn/DeepSeek-Harness-Hanako-Memory](https://github.com/moononnn/DeepSeek-Harness-Hanako-Memory) — Hana 式助手管理：可视化配置助手预设（卡片、四性格「元」、头像裁剪），并完整复刻 Hana 记忆系统（滚动摘要、分层编译、SQLite 事实库、深度记忆）。
+- [Morgiana-V3/dsh-feed-the-seek](https://github.com/Morgiana-V3/dsh-feed-the-seek) — 大肥鱼饲养手册：基于本地 SQLite 的个人跨会话记忆，支持对话自动学习、伙伴状态与可选语义检索，目前面向 Windows 单人本地使用。
 - [NattoCB/dsh-plugin-memory](https://github.com/NattoCB/dsh-plugin-memory) — 五层持久记忆系统：相关性注入、LLM 自动提取、画像轮替与六个 agent 工具。
 - [NeoHotaru/dsh-knowledge-canvas](https://github.com/NeoHotaru/dsh-knowledge-canvas) — 右侧栏的卡片画布知识库：笔记就是节点，模型通过九个工具读写、连线、移除。节点可以挂图片和文档，读节点时连同内容一起返回（Office 文件就地抽取文本），图片还能作为图像直接交给模型。
 - [nineoooo/dsh-qzone-echo](https://github.com/nineoooo/dsh-qzone-echo) — 把你本人发过的 QQ 空间说说收进本地库，自动分成「思考/感想」「梦记」「介绍/推荐」三栏，三栏都能人工纠正 —— 逐条改，一条只动它自己那一栏，撤销也不会连累另外两栏。配一个可用口令锁住的私人网页查看器，会把被上游接口截到前 500 字左右的长说明确补回全文，按年月统计字数，并把配图备份到本地离线可读。Cookie 只存在本机。
