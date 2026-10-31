@@ -1634,6 +1634,7 @@ dsh plugin --profile web add dshmarket
 - [yuanzhenqi/dsh-mobile-ui](https://github.com/yuanzhenqi/dsh-mobile-ui) — 为 DSH Web 做成真正的手机壳：会话列表收成抽屉，点会话自动收起且不弹键盘，设置页改为全宽 sheet。
 - [Yuer6327/NoLetMe](https://github.com/Yuer6327/NoLetMe) — 实时追踪 DeepSeek Harness 网页对话中模型流式推理轨迹关键词统计的 UI 面板。
 - [Yujm888/dsh-turn-rail](https://github.com/Yujm888/dsh-turn-rail) — Codex 风格自动隐藏右缘轮次导航：靠边浮现、单轮 tooltip、会话内搜索、长会话 30 轮滚动窗口。
+- [YukimuraSol/dsh-ui-block](https://github.com/YukimuraSol/dsh-ui-block) — 把 ::dsh-ui <name> \[res=WxH]:: 指向的 ui-blocks 文件渲染到沙箱画布，并把元素标记变成输入框 chip，回写时原样还原为标记。
 - [YukoZ1227/dsh-ui-design-toggle](https://github.com/YukoZ1227/dsh-ui-design-toggle) — 需先安装 ui-ux-pro-max 设计技能，本插件只做门控。在 DSH 侧边栏底部加一个开关，一键启用/停用 ui-ux-pro-max 设计技能，选择保存在 profile 设置里。
 - [yuloop/dsh-web-split](https://github.com/yuloop/dsh-web-split) — 网页端分屏面板：可拖拽的窗格，每个窗格渲染一个会话的完整对话；窗格标题带未读点，布局按浏览器保存。
 - [yuluo554/dsh-prompt-polisher](https://github.com/yuluo554/dsh-prompt-polisher) — 输入框提示词优化：一键把当前草稿交给会话模型（自动启用 workflow 引擎）或 OpenAI 兼容独立 API（密钥只存宿主侧）改写并回填，草稿中途变更时弹出替换/放弃确认；提供 concise/structured 风格预设、自定义模板（{draft} 占位符）、状态条一键还原与引用记号保护。
@@ -3355,6 +3356,7 @@ dsh plugin --profile web add dshmarket
 - [PolitaryMonicy/dsh-agent-clean](https://github.com/PolitaryMonicy/dsh-agent-clean) — 在 DSH 完全退出后清理会话日志里的子代理条目与孤儿投影缓存，默认先试演并整份备份。
 - [popu2do/dsh-call-session](https://github.com/popu2do/dsh-call-session) — 并排运行多个 DeepSeek Harness 会话，让它们互相交接任务，并在同一张只读看板上看清整场协作。
 - [praystring/dsh-send-debounce](https://github.com/praystring/dsh-send-debounce) — 把聊天框里连发的几条短消息缓冲合并成一轮再唤醒模型：停手若干秒后才回复一次；长消息和附件不延迟。
+- [prgrmrwy/dsh-session-id-copy](https://github.com/prgrmrwy/dsh-session-id-copy) — 在 DSH Web 界面的对话标题旁显示 6 位 session id 徽标，点击即复制完整 session id 并给出短暂提示。
 - [ptrel1/dsh-interrupted-resume](https://github.com/ptrel1/dsh-interrupted-resume) — 轻量级的 dsh 崩溃恢复：重启后识别上一轮被强杀中断的会话，注入一条「先核实现状再动手」的续跑指令，避免盲目重做已有副作用的操作。只认真正的崩溃信号（turn/end 的 reason 为 interrupted，由 session repair 冷读时合成），因此不会把用户主动取消、限流或模型报错误判为可续，也就不需要错误分类、退避策略或配置界面。与通用自动续跑插件相比，它还覆盖「子代理执行中被中断」的盲区：此时父代理的轮次已正常结束（正在等待子代理），常规判定看不到任何可续对象，整棵子代理树会静默死掉；本插件会识别出被中断的子代理并唤醒父代理。单个宿主文件、零外部依赖、七个配置常量。
 - [PwnKY/dsh-session-link](https://github.com/PwnKY/dsh-session-link) — 复制、打开 `dsh://` 会话深链，或将其粘贴到另一对话中，注入被引用会话的受限只读快照。
 - [qiangweiliu/dsh-context#agent-embodiment](https://github.com/qiangweiliu/dsh-context/tree/main/agent-embodiment) — 为 DeepSeek Harness 提供上下文可观测性与控制：跨会话 token 分析、会话级预算/提示词/工具控制，以及可选的 Agent 脚手架。复用官方 tokenMeter、compaction、systemPrompt、tools.restrict seam；监控只读。
