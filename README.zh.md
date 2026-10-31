@@ -1260,6 +1260,7 @@ dsh plugin --profile web add dshmarket
 - [SeverusZh/dsh-skills-mcp-group-manager](https://github.com/SeverusZh/dsh-skills-mcp-group-manager) — 将已安装的技能分组管理、独立开关 MCP 服务器：按启用分组过滤模型可见的技能目录（并集去重），全部操作集中在左侧面板。
 - [Sevyn-Star/dsh-receipt](https://github.com/Sevyn-Star/dsh-receipt) — 在左下角显示这一场里，失败或空结果之后又用同一组参数重试花了多少钱。
 - [SHAN5246992ZHUI/dsh-select-translate](https://github.com/SHAN5246992ZHUI/dsh-select-translate) — 在任意 Windows 应用里划词，鼠标旁弹出只含译文的置顶卡片；译文流式出现并跟随最新一行，单次上限 15000 字。仅 Windows。
+- [ShawnRen57/dsh-whale-trail](https://github.com/ShawnRen57/dsh-whale-trail) — 本地优先的 DeepSeek Harness 成就系统：正常使用即点亮 7 个系列共 67 枚印章徽章，完成 9 段航程并收集 36 件海洋收藏，解锁可配置的 ASCII 水族馆，还能把五枚珍藏导出为 PNG 航海名片或可离线游动的 HTML。无需打卡、不新增模型调用、不上传聊天内容。
 - [shengyvself/dsh-reading-pad](https://github.com/shengyvself/dsh-reading-pad) — DSH 沉浸式只读阅读板：模型用 `reading_pad_send` 把已排版 Markdown 推到原生右侧栏「📖 阅读板」tab，三套低蓝光主题、30em 限宽排版；也可只读浏览当前写作工程的章节。
 - [shenj13/dsh-book-library](https://github.com/shenj13/dsh-book-library) — 在 DSH 左侧栏读书：导入 EPUB/TXT/Markdown，逐章给出五段式精读（本段落概括 / 文章美句 / 作者表达 / AI 观点 / AI 认为需要补充点），可朗读、边听边问，还能把整本讲解导出成一份网页。导出只装订已经生成精读的章节，未读章节不会包含在内。
 - [SherUnlocked-4869/dsh-plugin-msg-nav](https://github.com/SherUnlocked-4869/dsh-plugin-msg-nav) — 对话节点导航条：对话区右缘一列短横线节点对应每条用户消息，支持阅读位置跟踪、悬停预览卡片、点击跳转高亮、滑动窗口与自动隐藏。
@@ -4131,6 +4132,7 @@ dsh plugin --profile web add dshmarket
 - [fireworksss/LeisureTimeQueue](https://github.com/fireworksss/LeisureTimeQueue) — LeisureTimeQueue 是一个基于 DeepSeek Harness 的本地闲时任务队列插件。
 - [Fish121380/auto-mouse](https://github.com/Fish121380/auto-mouse) — 面向 Codex、DeepSeek Harness 和 MCP 客户端的 Windows 桌面 UI 上下文取景器：选择窗口、UI 元素或屏幕区域，使用悬停高亮、UI Automation、截图和本机 OCR，并在输出前确认 Markdown/JSON 上下文。
 - [fishcg/cua-computer-use](https://github.com/fishcg/cua-computer-use) — 把 Cua Driver 的 MCP 服务器接入 DSH：缺失时自动安装 cua-driver，经内置 MCP 客户端以 stdio 启动，注册其 60 个无障碍优先的窗口、输入、菜单与浏览器工具，并附带工作流技能与一次性的 macOS 权限引导。
+- [fishdivinity/dsh-local-search](https://github.com/fishdivinity/dsh-local-search) — 只读的本机检索：文件名走 Everything（es.exe），PDF / Office 文档正文走 Anytxt，共五个只读工具。两个引擎都要另装，仅支持 Windows。
 - [Fishquito7/dsh-gitbash](https://github.com/Fishquito7/dsh-gitbash) — 在 Windows 上把 DSH 原版 bash 工具挂到 Git Bash 上运行，命令直达 bash -c，不再经 pwsh 工具二次解析。
 - [Fishsb/dsh-prompt-enhancer](https://github.com/Fishsb/dsh-prompt-enhancer) — 一键提示词增强（5 模式·记忆链·模型链）+ 语音识别（云端 Qwen3-ASR / 本地 SenseVoice 离线，说完自动停），附服务异常一键重启。
 - [Flan246/dsh-lit-search](https://github.com/Flan246/dsh-lit-search) — 为 DeepSeek Harness 提供的学术文献检索与引用工具：基于 Crossref 与 OpenAlex 检索论文（无需 API key），支持相关工作发现，并可按 GB/T 7714、APA 与 BibTeX 格式生成引用。
@@ -7496,6 +7498,7 @@ dsh plugin --profile web add dshmarket
 
 ### 📱 远程与移动端
 
+- [01men/kizuna](https://github.com/01men/kizuna) — Kizuna Agent 信箱：四个工具让 Agent 读自己的信箱（信箱状态、待处理信件、读一封信全文），并以 completed / failed / input-required / working 状态回信。Kizuna 是带可靠投递的 Agent 通讯录：同一台机器上的 kizuna-box 持有信箱，对无人签收的信按 3 / 10 / 30 / 60 / 120 分钟重试，每次投递尝试都写入只增不改的留痕。插件只连本机回环信箱，不持有任何凭证。
 - [1032740078/dsh-web-url-view](https://github.com/1032740078/dsh-web-url-view) — 在设置页新增「查看 URL」：显示当前会话的临时访问地址，以及一个长期不变、局域网内其他设备也能直接打开的固定地址。
 - [2710586329/dsh-qq](https://github.com/2710586329/dsh-qq) — 把 QQ 接进 DeepSeek Harness：私聊群聊、本地语音转文字、看图，以及十个互动工具（戳一戳、贴表情、点赞、发图、发文件、撤回等）。需要本机另跑一个 OneBot 11 实现（如 NapCat）。
 - [452926826/dsh-feishu-bot](https://github.com/452926826/dsh-feishu-bot) — 通过 WebSocket 将飞书聊天连接到 DeepSeek Harness 的项目、对话、回复和限定范围的工具审批。
