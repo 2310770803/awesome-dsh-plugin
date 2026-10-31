@@ -4380,6 +4380,7 @@ dsh plugin --profile web add dshmarket
 - [kevinchu1981/dsh-insurance-experts#insurance-company-analyst](https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-company-analyst) — 保险公司财务经营分析专家，真跑偿付能力、财务报表、投资、渠道与同业对标测算。
 - [kevinchu1981/dsh-insurance-experts#insurance-ops-analyst](https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-ops-analyst) — 保险公司经营分析专家（盈安），真跑偿付能力、盈利能力、内含价值(EV)、投资风险与监管合规五维测算。
 - [kevinchu1981/dsh-insurance-experts#insurance-product-analyst](https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-product-analyst) — 保险产品对比与建议书专家（险析君），条款拆解、性价比测算、保障规划，生成可自核 PDF 建议书。
+- [kexijiang/dsh-harmony](https://github.com/kexijiang/dsh-harmony) — 面向 DSH NEXT 桌面版的鸿蒙设备工作台，提供 Better Sidebar 标签页、原生悬浮投屏、主题同步和 Agent 设备操作。
 - [kexuejin/dsh-zhihu-dashboard](https://github.com/kexuejin/dsh-zhihu-dashboard) — 知乎面板：热榜（带趋势标记）、关注动态（收藏/创作/关注的人）、帖子追踪（问题/关键词/关注的人，支持自动创意简报），并提供 5 个对话工具（zhihu_search / hot / answer / global_search / followees）。
 - [kezan31/dsh-copy-tool](https://github.com/kezan31/dsh-copy-tool) — 提供按行复制工具，可替换或插入文件片段，并支持缩进控制和 diff 预览。
 - [kgmkm/dsh-genspark](https://github.com/kgmkm/dsh-genspark) — 将 Genspark 能力接入 DeepSeek Harness：网页搜索、抓取、图片/视频/音频生成、媒体理解、X/Instagram/Reddit 搜索与模型列表，提供 17 个工具和 18 个 /genspark-* 命令。需安装并登录 @genspark/cli（gsk login），或设置 GSK_API_KEY。
@@ -6880,6 +6881,7 @@ dsh plugin --profile web add dshmarket
 - [YOYOLnFu/dsh-bili-pond](https://github.com/YOYOLnFu/dsh-bili-pond) — 让蓝色大肥鱼替你刷 B 站：帮你评论，把发现的有趣内容私信给你，还会写下日记；它也有记忆，能长期总结。视频按你的口味筛选并生成 Markdown 日报，也能守着评论区替你回话。开启「圈地自萌」后，它只回视频 UP 主本人主动邀请的楼中楼，普通观众喊话不算，绝不自己起新楼；评论、私信、自动运行和守护默认关闭。需 Node 22、DSH 0.1.7-rc.1+、已登录的 B 站账号、模型线路与 Python。
 - [YoyuDev/dsh-ping](https://github.com/YoyuDev/dsh-ping) — Agent 需要你时响铃并弹出桌面通知：阶段完成、请求批准、等待输入、任务完成、出错，五种场景各配不同提示音。
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
+- [yunfengnobug/dsh-qq-bot](https://github.com/yunfengnobug/dsh-qq-bot) — 把 DSH 会话接到 QQ（OneBot/NapCat）的插件（fork 自 sj244/dsh-qq-bridge，MIT）。白名单默认全关；被 @、叫到昵称或被戳一定叫醒，其余消息按可调概率抽样。Cordis 插件 id 仍是 qq-bridge。
 - [YUsaltyfish/dsh-notification-sound](https://github.com/YUsaltyfish/dsh-notification-sound) — 弹出选项卡提问时、请求工具权限时、一轮对话结束时，各播放一次提示音；支持自定义音频文件夹；另附 fish_beep 工具，可随时手动响一声。
 - [Yuuyuko-uu/dsh-qq-bridge](https://github.com/Yuuyuko-uu/dsh-qq-bridge) — 通过 NapCat HTTP 把 DSH 会话和 QQ 双向打通：AI 说完自动发到 QQ，你在 QQ 里说的话自动转进会话。
 - [yxiaoy6/dsh-taskbar-alert](https://github.com/yxiaoy6/dsh-taskbar-alert) — Windows 上审批、提问或方案确认在等你、或一轮回复完成时，让 DeepSeek Harness 的任务栏按钮闪动。
@@ -7257,6 +7259,7 @@ dsh plugin --profile web add dshmarket
 - [SaiSenBox/dsh-boot-guard](https://github.com/SaiSenBox/dsh-boot-guard) — 独立于常规客户端插件加载链的 DSH Web 启动救援工具，可定位疑似故障插件、临时跳过，并且只恢复 Boot Guard 写入的配置。
 - [sakikoTGW/dsh-plugin-resolver](https://github.com/sakikoTGW/dsh-plugin-resolver) — 面向 agent 的插件安装器：解析 DSH 兼容版本、处理同名歧义，并在安装后校验 loader 入口。
 - [SakuraYH1080/dsh-quick-restart](https://github.com/SakuraYH1080/dsh-quick-restart) — 在 DSH 桌面端账号菜单中新增“快速重启”入口，一键退出并重新打开 DSH。仅 Windows 桌面端。
+- [seally-web/dsh-matlab-runner](https://github.com/seally-web/dsh-matlab-runner) — 侧栏里的 MATLAB IDE：类 VS Code 的 .m 编辑器，背后是常驻 MATLAB 会话（单次运行 12-84 毫秒，figure 真的会弹窗），可查看并编辑的实时工作区变量、.mlx 预览、多文件夹挂载，以及给 agent 用的 matlab_run 工具。
 - [sgzeng/pbfuzz#dsh-kanalyzer](https://github.com/sgzeng/pbfuzz/tree/master/packages/dsh-kanalyzer) — LLVM 静态分析插件，可为 C/C++ 项目构建整程序 LLVM bitcode，并在其上运行 kernel-analyzer（KAMain）可达性分析，向智能体提供 kanalyzer_* 工具，并向其他插件提供 ctx.kanalyzer 服务。
 - [shiinakaze/dsh-plugin-backup](https://github.com/shiinakaze/dsh-plugin-backup) — 按分类备份 DSH 的设置、技能、插件、会话与存储，生成可校验、可恢复、可下载的归档，并支持 GitHub 同步。
 - [shinjiyu/deepseek-harness-evolver](https://github.com/shinjiyu/deepseek-harness-evolver) — 补充官方创造模式：把内存里试过的小工具插件校验、经 ctx.plugin 热挂、打分后固化到盘上或回滚。
@@ -8094,6 +8097,7 @@ dsh plugin --profile web add dshmarket
 - [lintwosix-beep/dsh-pet-chat](https://github.com/lintwosix-beep/dsh-pet-chat) — 带聊天面板的桌宠：QQ 风格的历史记录、收藏，以及聊完会以合并转发卡片回到历史的支线对话；面板停靠在小女仆右侧，可从边缘与四角拖拽改大小。基于 PC2005-cloud/dsh-pet（MIT）的二次修改版，请勿与原版同时安装。
 - [Little-Star888/dsh-pelican](https://github.com/Little-Star888/dsh-pelican) — 右下角鹈鹕环海骑行 SVG 动画，随代理状态在思考/完成间切换，回复完成时播放提示音并可选发送系统通知。
 - [liuwenji007/dsh-muyu](https://github.com/liuwenji007/dsh-muyu) — 右下角电子木鱼，默认是鲸鱼娘图包：敲头记功德，模型忙碌时自动敲；功德按会话存本机，可换自定义图源。
+- [liuyize-CHE/dsh-spanish-tutor](https://github.com/liuyize-CHE/dsh-spanish-tutor) — 西语练习面板：六类本地判分的练习（11 个时态的动词变位、名词阴阳性、复数、认词、句子填空、ser/estar 与虚拟式语法专项），外加模型批改的情景造句、8 级间隔重复，以及四个 agent 工具；答案在插件内重算并判分，模型只用来讲解。
 - [LJXDSG12/dsh-liuyao](https://github.com/LJXDSG12/dsh-liuyao) — DeepSeek Harness 的六爻算卦插件——先天八卦盘背景、周易开场辞、手工输入爻象或模拟三枚铜钱摇卦、纳甲排盘（六亲、六神、旬空、伏神、纳音、旺衰、动变），断卦由模型逐条注明典籍出处，并可对同一卦追问（一卦一断）。零 npm 依赖；所有请求都发往本机 DSH 宿主，不访问第三方网络。
 - [Lolancier/v-manager-dsh-pet](https://github.com/Lolancier/v-manager-dsh-pet) — DSH Web UI 桌宠：内置 Vivi（芊芊）Live2D 形象，支持抚摸/喂食、每日小鱼干羁绊经济与情绪驱动表情。
 - [lsjspl/dsh-reel](https://github.com/lsjspl/dsh-reel) — 基于 dsh 内置 Web 服务管理、浏览与播放本地媒体库，完美适配 PC 与移动端，支持手势上下滑动刷视频、即时拖拽秒播与实时转码。
