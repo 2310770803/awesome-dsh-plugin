@@ -5228,6 +5228,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zimai233/dsh-image-search](https://github.com/zimai233/dsh-image-search) - Multi-engine reverse image search aggregator: Google Lens, Baidu, Yandex, TinEye, SauceNAO, IQDB, Ascii2d.
 - [zimai233/dsh-video-downloader](https://github.com/zimai233/dsh-video-downloader) - Detect and download media from Bilibili/YouTube/Douyin/Xiaohongshu with quality and format analysis.
 - [zoe1nan/windowseat](https://github.com/zoe1nan/windowseat) - Windowseat bridge for DeepSeek Harness: a local host plugin exposing a loopback HTTP/SSE endpoint so the bundled Microsoft Edge side-panel extension can read the current page, search local files and talk to DSH; the Edge extension lives in the same repo and must be loaded separately. Windows 10/11 with desktop Edge required.
+- [zou-hong-run/dsh-deepseek-search](https://github.com/zou-hong-run/dsh-deepseek-search) - Registers DeepSeek Search and Fetch API providers for the ctx.web seam, replacing both the web_search and web_fetch backends with DeepSeek's Search and Fetch JSON APIs, with configurable retries and backoff, settings that apply to the next call, and a configuration page on the bundle page.
 - [zyfgood/dsh-web-search-tavily](https://github.com/zyfgood/dsh-web-search-tavily) - Registers a Tavily search provider for the ctx.web seam and switches web_search to it, with a comma-separated apiKey list that rotates on 401/403/429/5xx and transport errors.
 
 ### Vision & Multimodal
