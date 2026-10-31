@@ -3053,6 +3053,7 @@ dsh plugin --profile web add dshmarket
 - [betty598/dsh-split-reply](https://github.com/betty598/dsh-split-reply) — 把 QQ 那边整段回复按标点拆成几句，隔一两秒一条条发出，而不是一次糊一大段。仅在 QQ 频道关闭流式输出（im-qqbot 设 streaming: false）时生效；流式开着时回复不经过本插件。
 - [bill9109/dsh-conversation-share](https://github.com/bill9109/dsh-conversation-share) — 分享任意段落的对话。
 - [bingzhu44-blip/brutal-monkey](https://github.com/bingzhu44-blip/brutal-monkey) — dsh暴力删除：永久删除 DSH 会话的磁盘数据——单条删除或跨工作区批量删除，支持 Ctrl+A 全选与 Delete 快捷删除，彻底清理对话记录、投影缓存、工作区归属、附件与子会话，不可恢复。
+- [BJ1919810/dsh-session-mail](https://github.com/BJ1919810/dsh-session-mail) — 同一宿主内 DSH 会话之间的代理传话。`send_session_message` 可等对方回合结束再送达、也可插进正在跑的回合；发信方 id 由插件自己写，伪造的 From 抬头会被拒；每条消息带 id —— 回信可用 replyTo 引用、thread 防止同一件事排队两次、supersedes 撤回尚未投递的旧消息。`read_session_info` 只读地看对方：标题、最后一轮回复、最后一次 present 的文件、以及忙闲与队列深度。
 - [Blueteemo/dsh-smart-namer](https://github.com/Blueteemo/dsh-smart-namer) — 会话与工作区的智能命名：点一下让模型基于条目自身内容给出短名候选，选中即改名。
 - [Session Lens](https://github.com/bobostudio/dsh-session-lens) — DeepSeek Harness 的会话洞察，并可一键导出为可分享的 HTML 回放。
 - [Boliban/dsh-enter-customizer](https://github.com/Boliban/dsh-enter-customizer) — 接管聊天输入框的回车等快捷键，每个快捷键的行为都能单独配置。
@@ -6201,7 +6202,7 @@ dsh plugin --profile web add dshmarket
 - [linxuhao/AItelier#integrations/dsh](https://github.com/linxuhao/AItelier/tree/main/integrations/dsh) — 从 DSH 经 MCP 运行 AItelier 流水线：39 个工具（22 读、17 写），用于生成、运行、查看、编辑、导出与导入多步 SkillFlow 流水线。步骤在 AItelier 中执行而不占用 DSH 会话，按 run_id 轮询，在引擎强制的检查点暂停并由 answer_checkpoint 应答，事后可读取逐步 trace 与各步输出；add_provider / map_model / edit_role 可把单个角色指向本地或更便宜的端点。随包附带 aitelier-pipelines skill。
 - [lion231226/dsh-verified-progress](https://github.com/lion231226/dsh-verified-progress) — 已验证进度账本：三个工具只在「带全新上下文的独立子代理」对着工作区核实之后，才把某一步声明记为进度。每次验证前后对声明的范围做文件指纹比对，改动过该范围的验证者其裁决一律作废，该轮不得成为进度。
 - [LiPu-jpg/Openwrite](https://github.com/LiPu-jpg/Openwrite) — 面向 DSH 的小说创作工作台，提供创作预设、大纲与人物管理、正文批注、审稿流程和受管理的本地 Python 后端。
-- [lishize20040802-rgb/dsh-deep-ptc-mode](https://github.com/lishize20040802-rgb/dsh-deep-ptc-mode) — 深度PTC模式是 DeepSeek Harness 的开源 Agent preset：保留内置 PTC 的工具面，把人设换成一份工作契约——持续汇报进度、放心使用工具、需求不明先问清楚、按范围做验证，并管理有生命周期的后台任务。设置卡片可选择该预设的执行器——自动、WSL Bash、Windows PowerShell、原生 Zsh 或原生 Bash；人设中明写 DeepSeek 无限 token 预算，把预算花在深度与验证上，不注水。
+- [lishize20040802-rgb/dsh-deep-ptc-mode](https://github.com/lishize20040802-rgb/dsh-deep-ptc-mode) — 深度PTC模式是 DeepSeek Harness 的开源 Agent preset：保留内置 PTC 的工具面，把人设换成一份工作契约——写明 DeepSeek 身份与无限 token 预算，要求不为省 token 跳过读取、命令和验证；按预计耗时分档计划（5 分钟内直接做，5–20 分钟告知计划但不等审批，超过 20 分钟需批准）；意图不清时先提问而不是猜测。等待由代码限制：包装官方的命令、job 与提问工具，前台命令超过 30 秒（可配置）自动转为后台 job，用户插入消息时立即结束当前等待让模型读到消息，前台超过 5 秒的暂停和 run_code 中的长定时器被拒绝，提问采用限时模式。设置卡片可选择该预设的执行器——自动、WSL Bash、Windows PowerShell、原生 Zsh 或原生 Bash。
 - [lispking/dsh-auto-evolve](https://github.com/lispking/dsh-auto-evolve) — 一个自我进化的 DeepSeek Harness 插件：观察代理的运行方式，通过 LLM 对其自身资产提出改进方案，在沙箱试运行代理中验证每个方案，只应用通过验证的变更——带版本化账本，出现性能回退时自动回滚。
 - [litongtong256/dsh-automation-monitor](https://github.com/litongtong256/dsh-automation-monitor) — 会话视图里的只读「自动化」标签页。把其他插件排的自动化汇总成一张表：上次运行、下次运行时间、大致 token 花费，另附今日总花费与余额。它不拥有任何任务，也不会启动任何东西。
 - [LittleBlackTong/dsh-plugin-cron](https://github.com/LittleBlackTong/dsh-plugin-cron) — Agent 任务定时调度器：自然语言或侧栏 UI 创建任务，到点向新建/固定会话注入 user 消息触发完整 agent turn，带执行历史、手动触发与 SSE 实时同步。要求 DSH session format v4（官方 DeepSeek Harness 0.1.7+）：注入消息使用 producer-owned source kind plugin:cron。
@@ -6939,6 +6940,7 @@ dsh plugin --profile web add dshmarket
 - [Airmetro/dsh-update-checker](https://github.com/Airmetro/dsh-update-checker) — DeepSeek Harness 主程序与插件更新管理：对主程序与每个已装插件做 npm/GitHub Release 双源 semver 比对，GUI 横幅按系统语言（中/英）列出可更新项；一键更新——主程序自动备份、完整性校验、失败回滚，插件经临时目录安装不碰其它包；更新后看门狗自动重启服务。「检查更新」设置页提供逐插件版本状态灯、实时更新进度与横幅/通知开关。
 - [ajia1206/dsh-restart](https://github.com/ajia1206/dsh-restart) — 用模型工具或右下角 GUI 控件重启正在运行的 DSH 进程：探测 launchd KeepAlive，无托管时派 detached supervisor 兜底（握手失败即取消退出），桌面版走 macOS 应用重启路径，每次重启写入按 armId、pid 与 profile 关联的 JSONL 记录，使一次重启能与日志里的无关活动区分开。
 - [AKS1st/dsh-skill-manager](https://github.com/AKS1st/dsh-skill-manager) — DSH 设置面板内的「技能管理」页面：按系统 / 用户 / 工作区 / 预设浏览技能，展开技能查看文件树、查看和编辑文件，支持从 zip 导入技能，以及导出、删除（系统技能只读）。
+- [alice0721021-web/dsh-local-devkit](https://github.com/alice0721021-web/dsh-local-devkit) — 本地开发事实层：环境探测与运行时健康检查、git 状态/差异/历史/提交、写入前快照与逐版回退，以及 Node / Python / Go 项目检查。
 - [All3nCN/dsh-qa-suite-N23](https://github.com/All3nCN/dsh-qa-suite-N23) — 质控套件：agent 编辑 TypeScript 后自动回喂 tsc --noEmit 诊断，另含 /code-review 命令（五镜头并行审查 + 置信度评分）；吸收合并 dsh-code-check 与 dsh-command-code-review。
 - [AmethystLuna/dsh-model-everything](https://github.com/AmethystLuna/dsh-model-everything) — 把设计、计划或文档里的声称抽成模型再判定：UML 图渲染、读取与审查；状态机、协议与数据模型按模型判定；迁移检查覆盖与回滚对称；并发声称挖掘后分派给能判定它的工具；依赖图审查；报告对比。
 - [andyfan1094/dsh-codebase-memory](https://github.com/andyfan1094/dsh-codebase-memory) — 把 Codebase Memory MCP 代码知识图谱接入 DSH，并用防抖文件监视器自动保持索引新鲜。MCP 桥接部分仅支持 Windows（监视器跨平台）；首次启动会经 npx 自动安装所需 npm CLI。
