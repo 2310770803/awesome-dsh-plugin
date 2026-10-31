@@ -136,6 +136,7 @@ dsh plugin --profile web add dshmarket
 
 ### 🎨 UI 增强
 
+- [01men/DeptAI-UI-DSH](https://github.com/01men/DeptAI-UI-DSH) — AI 代理与人类的协作前台——部门看板、工单、审批与行业计算都在 DSH 会话与面板里完成，代理在对话里干活，人在面板里负责。它通过既有契约调用 01men/ybkkasi 治理底座（资产台账、IAM、OIDC SSO、RBAC 与场景级授权），不重复实现治理。以 Cordis bundle 形式安装，挂载在 /gate01；自测套件每次推送全绿。
 - [01Virex/dsh-status-rotator](https://github.com/01Virex/dsh-status-rotator) — 把 dsh 回合状态行换成 1059 条中英文案的轮播：打字机输出、流动彩虹渐变、弹幕、12 个可开关的主题词库包、实时占位符与标签页标题轮换。两个 star 包默认关闭；星标者包每位星标者一条文案，由工作流每周刷新。
 - [0imzero/dsh-workspace-menu](https://github.com/0imzero/dsh-workspace-menu) — DSH 主页工作区/会话增强菜单：置顶、重命名、资源管理器打开、归档、分叉、复制、新窗口打开。
 - [0x7A7A6572/dsh-forge-studio#plugin-notes](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-notes) — dsh 便签插件：侧栏入口打开 Markdown 便签面板，支持自动保存、颜色标签、粘贴图片与任务清单。
@@ -1709,7 +1710,7 @@ dsh plugin --profile web add dshmarket
 
 ### 💰 用量与计费
 
-- [01men/ybkkasi](https://github.com/01men/ybkkasi) — 自托管 AI 基础设施的资产治理控制台。把 MCP 服务 / Skill / Agent / AI 应用 / 模型渠道 / SaaS 连接器 / NAS 存储登记进同一台账，带生命周期状态机、逐工具 RBAC 权限点、部门 x Agent x Skill 三维成本归因、依赖拓扑与只追加审计日志。v1.5.0 实测：29 个插件包、450 条 REST 路由、86 个 MCP 工具，1610 项端到端断言全绿。完全自托管，MIT，无托管版无云端合约。
+- [01men/ybkkasi](https://github.com/01men/ybkkasi) — 自托管 AI 基础设施的资产治理控制台。把 MCP 服务 / Skill / Agent / AI 应用 / 模型渠道 / SaaS 连接器 / NAS 存储登记进同一台账，带生命周期状态机、逐工具 RBAC 权限点、部门 x Agent x Skill 三维成本归因、依赖拓扑与可追加审计日志。v1.5.0 实测：29 个插件包、488 条 REST 路由、96 个 MCP 工具，1740 项端到端断言全绿。完全自托管，MIT，无托管版无云端合约。
 - [02Muller25/dsh-api-balance](https://github.com/02Muller25/dsh-api-balance) — 输入框下方实时显示 DeepSeek API 账户余额，支持手动刷新与自定义间隔自动刷新。
 - [0disoft/dsh-ci-diet](https://github.com/0disoft/dsh-ci-diet) — 找出被浪费的 GitHub Actions 运行时间，并提出小而可审查的工作流补丁；任何修改都需要明确批准，并提供用于分析规则、历史上限、存储和成本估算的 DSH 设置页面。
 - [0x7A7A6572/dsh-forge-studio#plugin-usage-billing](https://github.com/0x7A7A6572/dsh-forge-studio/tree/main/packages/plugin-usage-billing) — dsh 用量与费用视图：从既有会话日志聚合真实 token 用量，按事件发生时刻的价格写时锁定费用；侧栏卡片或输入框胶囊展示本月/今日花费与预算进度，设置页另有概览、趋势、明细三页。
