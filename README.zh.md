@@ -3495,6 +3495,7 @@ dsh plugin --profile web add dshmarket
 - [zangxx66/dsh-prompt-setting#dsh-prompt-setting](https://github.com/zangxx66/dsh-prompt-setting/tree/main/packages/dsh-prompt-setting) — DeepSeek Harness 默认 System Prompt 管理插件：在 Web GUI「设置」里浏览、检索并覆盖最终装配进每轮会话的系统提示词。
 - [Zcc50/dsh-workspace-frontend](https://github.com/Zcc50/dsh-workspace-frontend) — 把左侧栏重做成「工作区 → 分组 → 会话」树，支持拖拽归组、行内状态环与上下文环，以及可拖拽调宽的侧栏把手；会话花费列依赖 dsh-claude-style 插件，未安装时显示 —。
 - [zchuxi/dsh-restart-task](https://github.com/zchuxi/dsh-restart-task) — 修复被打断的 DSH 回合：放大产品自带的重试预算并把等待渲染成同一步内的实时倒计时，输出被截断时在同一轮内续写，回合已结束时可选地新开一轮继续；输入框为空时把「继续」交给发送键。
+- [zdjmrq/dsh-compact-control](https://github.com/zdjmrq/dsh-compact-control) — 调整 DSH 原生自动上下文压缩的触发阈值：在插件管理器的插件页面用滑块设置上下文占满模型窗口多少百分比时压缩（1%–100%，默认 80%，方向键可 1% 微调）；阈值调低时保留的最近历史预算会随之缩小，以免提前压缩被抵消，压缩本身仍由原生引擎执行。
 - [zenghang25/dsh-session-delete](https://github.com/zenghang25/dsh-session-delete) — 在 DSH 侧栏会话菜单中加入一键「删除会话」：把会话日志与该对话的 .dsh-sessions 产出目录移入 Windows 回收站，没有确认弹窗。
 - [zengxiaolou/dsh-session-rail](https://github.com/zengxiaolou/dsh-session-rail) — DSH 右侧栏的进度页：会话每一轮的状态与长任务上报的进度集中在一个 tab 里，和对话并排看。
 - [ZeroKingHao/dsh-cleaner#plugin](https://github.com/ZeroKingHao/dsh-cleaner/tree/main/plugin) — 为 DeepSeek Harness 补上会话删除：侧边栏菜单项、按工作区分组的批量清理面板、默认 dry-run 的 session_delete 工具。删除会话日志、投影缓存、工作区注册表引用与派生搜索索引，并级联删除全部子代理会话。
@@ -4170,6 +4171,7 @@ dsh plugin --profile web add dshmarket
 - [h2804131484-bit/dsh-douyinxiaoqi](https://github.com/h2804131484-bit/dsh-douyinxiaoqi) — 抖音运营插件：用本机真实 Chrome 看推荐、读评论、回私信，把本地视频传进创作者中心；写动作过权限闸，发布永远要你点头。
 - [hackmagic/dsh-unreal-agentlink](https://github.com/hackmagic/dsh-unreal-agentlink) — UnrealAgentLink 编辑器插件的桥接端：Unreal 编辑器拨入 127.0.0.1:17860 的 WebSocket 桥，agent 由此用 12 个工具驱动全部 170 个已编目命令（Actor、关卡、蓝图、材质、PCG、截图、日志、撤销）。
 - [hairyf/dsh-tool-activator](https://github.com/hairyf/dsh-tool-activator) — 默认只加载基础工具，其余工具按需激活，并在插件设置页以逐工具开关管理。
+- [Haitang-Hub/dsh-3d-director-desk](https://github.com/Haitang-Hub/dsh-3d-director-desk) — DSH 右侧栏 3D 导演台插件：摆角色、运镜、时间轴预演与导出，AI Agent 经 MCP 工具实时编排场景。
 - [Han-1413141/dsh-codex-computer-use](https://github.com/Han-1413141/dsh-codex-computer-use) — 让 DSH 当前模型通过已安装的 Codex Computer Use 运行时读取和操作 Windows 应用，并保留每个会话的应用授权。
 - [hanyi7867069-create/dsh-content-lab](https://github.com/hanyi7867069-create/dsh-content-lab) — 内容工坊——选题、标题、文案与排期生成工具，直接调用内置 LLM。
 - [HarunaTyan/dsh-rea-dispatcher](https://github.com/HarunaTyan/dsh-rea-dispatcher) — REA（逆向一切，上游 REA MCP 服务）的另一种接入方式：不把它的 207 个工具（每次请求约 77.5 万字节的工具表）直接挂进宿主，而是只暴露三个调用——rea_tools 按域列出目录、rea_help 取单个工具的 schema、rea_call 原样透传参数——超限结果落盘而不是静默截断。不代装引擎：需自行安装 REA（rea-agents 6.x）与 Ghidra 12.1.x；反编译质量由 REA/Ghidra 决定，不由插件决定。
@@ -6582,7 +6584,7 @@ dsh plugin --profile web add dshmarket
 - [hi-wenw/dsh-telegram-channel](https://github.com/hi-wenw/dsh-telegram-channel) — Telegram 手机遥控器：附着本机正在跑的 Web 会话，支持 /sessions 工作区→会话选择、/last 查看上次问答、/model 切换模型，以及原生 Rich Message 回复。
 - [hifengzy/dsh-sound-notify](https://github.com/hifengzy/dsh-sound-notify) — 在 DSH 任务完成、失败或等待授权时播放提示音，并提供分类开关。
 - [hmlyx/dsh-notify](https://github.com/hmlyx/dsh-notify) — 在输入框右边加了一个泡泡窗口，你可以接入插件或者告诉 AI 什么时候使用它。
-- [HOPE-LGNF/dsh-state-notifier](https://github.com/HOPE-LGNF/dsh-state-notifier) — 为 DeepSeek Harness 提供五类任务状态提醒（完成、审批、提问、受阻、出错）：四种浏览器合成音方案、可点击回到会话的系统通知，没有就绪浏览器时降级为终端 BEL。
+- [HOPE-LGNF/dsh-state-notifier](https://github.com/HOPE-LGNF/dsh-state-notifier) — 为 DeepSeek Harness 提供五类任务状态提醒（完成、审批、提问、受阻、出错）：四种浏览器合成音方案、可在通知中显示提问正文、可选的原生 Windows/WSL 通知通道（可越过专注助手），没有就绪浏览器时降级为终端 BEL。
 - [hsiu1214/dsh-a2a-notify](https://github.com/hsiu1214/dsh-a2a-notify) — 会话生命周期事件（新建 / 运行中 / 完成 / 出错）的 Windows 气泡通知，覆盖所有工作区；还会监听会话存储，捕捉事件从不经过宿主总线的无头与 A2A 派发会话。仅支持 Windows。
 - [huhui-tech/dsh-host-notify](https://github.com/huhui-tech/dsh-host-notify) — 宿主侧 macOS 系统通知：提问/审批/回复完成即时送达，免疫渲染层隐藏丢通知，带图标、提示音与点击抬窗。
 - [iArxic/dsh-agents-notch](https://github.com/iArxic/dsh-agents-notch) — Windows 屏幕顶部始终置顶的刘海：每个会话一个小机器人，显示哪些在工作、哪些在等你、哪些已完成或失败；不抢焦点，全屏应用下自动隐藏，带独立设置页。
