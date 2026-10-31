@@ -3546,7 +3546,7 @@ dsh plugin --profile web add dshmarket
 - [yyfdfsyyf-source/dsh-context-fold](https://github.com/yyfdfsyyf-source/dsh-context-fold) — 把超长工具结果折叠为落盘副本并保留 head/tail 标记，为 compaction 摘要建立可检索账本，并按项目作用域抽取跨会话记忆；被折叠的内容可通过一次工具调用原样取回。
 - [zaizaizhao/dsh-branchmark#dsh-branchmark](https://github.com/zaizaizhao/dsh-branchmark/tree/main/packages/bundle) — Vibe Coding 时，如果突然想到另一个问题，或者看到一段以后还会用到的回答，可以先保存下来、在 Side Chat 里快速问清楚，或另开一个相关会话继续研究，不打断当前任务的开发思路和注意力。
 - [zangxx66/dsh-prompt-setting#dsh-prompt-setting](https://github.com/zangxx66/dsh-prompt-setting/tree/main/packages/dsh-prompt-setting) — DeepSeek Harness 默认 System Prompt 管理插件：在 Web GUI「设置」里浏览、检索并覆盖最终装配进每轮会话的系统提示词。
-- [DSH 重修整合包](https://github.com/Zcc50/dsh-rebuild) — DSH 环境一站式整合包：根目录是可从市场一键安装/更新的工作区美化插件，pack/ 子目录是任务列表、编码兼容、LSP/审查、视觉与白皮书的完整安装器。
+- [Zcc50/dsh-rebuild](https://github.com/Zcc50/dsh-rebuild) — DSH 环境一站式整合包：根目录是可从市场一键安装/更新的工作区美化插件，pack/ 子目录是任务列表、编码兼容、LSP/审查、视觉与白皮书的完整安装器。
 - [zchuxi/dsh-restart-task](https://github.com/zchuxi/dsh-restart-task) — 修复被打断的 DSH 回合：放大产品自带的重试预算并把等待渲染成同一步内的实时倒计时，输出被截断时在同一轮内续写，回合已结束时可选地新开一轮继续；输入框为空时把「继续」交给发送键。
 - [zdjmrq/dsh-compact-control](https://github.com/zdjmrq/dsh-compact-control) — 调整 DSH 原生自动上下文压缩的触发阈值：在插件管理器的插件页面用滑块设置上下文占满模型窗口多少百分比时压缩（1%–100%，默认 80%，方向键可 1% 微调）；阈值调低时保留的最近历史预算会随之缩小，以免提前压缩被抵消，压缩本身仍由原生引擎执行。
 - [zenghang25/dsh-session-delete](https://github.com/zenghang25/dsh-session-delete) — 在 DSH 侧栏会话菜单中加入一键「删除会话」：把会话日志与该对话的 .dsh-sessions 产出目录移入 Windows 回收站，没有确认弹窗。
@@ -3795,7 +3795,7 @@ dsh plugin --profile web add dshmarket
 - [omdsh-dev/dsh-kb-sieve](https://github.com/omdsh-dev/dsh-kb-sieve) — 从 md/txt/docx/pdf 构建可审计知识库包（SQLite FTS5），确定性检索与原文阅读。
 - [omdsh-dev/dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon) — 由 Mnemon 驱动的 DeepSeek Harness（DSH）跨 Agent、本地优先的持久记忆插件。它可在支持 Mnemon 的 Agent 之间共享长期记忆，并提供运行时记忆、可检索项目档案、语义召回、知识图谱和 Sidebar UI。
 - [orangeshinee/dsh-mem0](https://github.com/orangeshinee/dsh-mem0) — 自托管 mem0 记忆读写插件：agent 直接读写自有 mem0 服务（增删查改、搜索、历史、重置、状态），并带设置面板配置卡片。
-- [OverDustD7/dsh-experience-recall](https://github.com/OverDustD7/dsh-experience-recall) — 把在别的项目里记下的经验在当前工作命中时找出来，由本机小模型判断是否在下一步之前插入一条简短提示。
+- [OverDustD7/dsh-experience-recall](https://github.com/OverDustD7/dsh-experience-recall) — 把在别的项目里记下的经验在当前工作命中时找出来，由本机小模型判断是否在下一步之前插入一条简短提示。需要本机 Ollama（默认 qwen3.5:9b）以及 dsh-mnemon 记忆库与 mnemon CLI；缺了只会观察记录、不会注入。
 - [PerryLink/dsh-library](https://github.com/PerryLink/dsh-library) — 将本地 Markdown 与文本文档转为可检索的知识库，支持语义与关键词混合搜索、引用校验与来源注入。
 - [PerryLink/dsh-memento](https://github.com/PerryLink/dsh-memento) — 有界、分层、带审批门、可审计的跨会话记忆：`ctx.memory` 服务 + 零依赖 SQLite 存储 + `memory` 工具与冻结快照注入，并预演 dsh-memory-protocol v1——适配器注册表与可分发的一致性套件。
 - [Phant0Meow/dsh-meow-memory](https://github.com/Phant0Meow/dsh-meow-memory) — 项目级跨会话记忆：node:sqlite 七层存储（soul/user/project/fact/lesson/rules/topic），首条消息缓存友好注入 + 每条消息关键词命中，memory_remember/search/find_similar/read/update/project 工具，空闲窗口自动整理记忆（dream，峰时抑制）。prompt 文案按语言数据文件加载——框架支持多语言用户。
@@ -4380,7 +4380,7 @@ dsh plugin --profile web add dshmarket
 - [kevinchu1981/dsh-insurance-experts#insurance-company-analyst](https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-company-analyst) — 保险公司财务经营分析专家，真跑偿付能力、财务报表、投资、渠道与同业对标测算。
 - [kevinchu1981/dsh-insurance-experts#insurance-ops-analyst](https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-ops-analyst) — 保险公司经营分析专家（盈安），真跑偿付能力、盈利能力、内含价值(EV)、投资风险与监管合规五维测算。
 - [kevinchu1981/dsh-insurance-experts#insurance-product-analyst](https://github.com/kevinchu1981/dsh-insurance-experts/tree/main/packages/insurance-product-analyst) — 保险产品对比与建议书专家（险析君），条款拆解、性价比测算、保障规划，生成可自核 PDF 建议书。
-- [kexijiang/dsh-harmony](https://github.com/kexijiang/dsh-harmony) — 面向 DSH NEXT 桌面版的鸿蒙设备工作台，提供 Better Sidebar 标签页、原生悬浮投屏、主题同步和 Agent 设备操作。
+- [kexijiang/dsh-harmony](https://github.com/kexijiang/dsh-harmony) — 面向 Windows x64 上的 DSH NEXT 桌面版（在 DSH NEXT 2.0.21-next + Better Sidebar 0.28.2 上验证）的鸿蒙设备工作台；悬浮投屏复用 DSH 的 Electron，没有时首次打开会下载约 140 MB 的 Electron。
 - [kexuejin/dsh-zhihu-dashboard](https://github.com/kexuejin/dsh-zhihu-dashboard) — 知乎面板：热榜（带趋势标记）、关注动态（收藏/创作/关注的人）、帖子追踪（问题/关键词/关注的人，支持自动创意简报），并提供 5 个对话工具（zhihu_search / hot / answer / global_search / followees）。
 - [kezan31/dsh-copy-tool](https://github.com/kezan31/dsh-copy-tool) — 提供按行复制工具，可替换或插入文件片段，并支持缩进控制和 diff 预览。
 - [kgmkm/dsh-genspark](https://github.com/kgmkm/dsh-genspark) — 将 Genspark 能力接入 DeepSeek Harness：网页搜索、抓取、图片/视频/音频生成、媒体理解、X/Instagram/Reddit 搜索与模型列表，提供 17 个工具和 18 个 /genspark-* 命令。需安装并登录 @genspark/cli（gsk login），或设置 GSK_API_KEY。
@@ -5606,7 +5606,7 @@ dsh plugin --profile web add dshmarket
 - [hairyf/dsh-office-kit](https://github.com/hairyf/dsh-office-kit) — 通过 `/documents`、`/pdf`、`/presentations`、`/spreadsheets` 创建、读取与编辑 DOCX、PDF、PPTX、XLSX，把页面渲染出来核对排版，并将侧边栏预览中的选区变成发给会话的修改要求。需 Python 3.10–3.13。
 - [hanzhangzzz/dsh-diagram](https://github.com/hanzhangzzz/dsh-diagram) — 把 DSH 会话中的文章整理成会话内的 Excalidraw 画布：Agent 用 diagram_create 起草结构，你在画布中修改文字、节点和布局并自动保存，可导出 PNG、SVG 或 .excalidraw，Agent 再用 diagram_read 读回你改过的画布。0.6 新增大型三层分类树的可编辑总览与完整明细索引。
 - [HaoKuo/dsh-notebook-studio](https://github.com/HaoKuo/dsh-notebook-studio) — 把最多 30 篇上传的 PDF 文献变成提示词驱动的文献综述、关键信息提取、研究思路与研究设计，并导出带页码引用的报告（DOCX/PDF）或演示文稿（PPTX/PDF）。
-- [HaoKuo/DSH-Paper-DeepRead](https://github.com/HaoKuo/DSH-Paper-DeepRead) — 把文献精读库与 paper-deepread-html 精读技能打包成 dsh 插件：侧边栏浏览交互式报告、上传 PDF 到托管书库、由 Agent 或可选接入的站点自动精读 worker 精读、管理或重建书库；提供 paper_deepread、paper_deepread_uploads、paper_deepread_reports 三个模型工具。
+- [HaoKuo/DSH-Paper-DeepRead](https://github.com/HaoKuo/DSH-Paper-DeepRead) — 把文献精读库与 paper-deepread-html 精读技能打包成 dsh 插件：侧边栏浏览交互式报告、上传 PDF 到托管书库、由 Agent 或可选接入的站点自动精读 worker 精读、管理或重建书库；提供 paper_deepread、paper_deepread_uploads、paper_deepread_reports 三个模型工具。精读摄取与成稿需要 Python 3（内置技能首次会准备 PyMuPDF 解释器；重建索引会退化为纯 python3）。
 - [HiSeax/dsh-agent-outputs-reader](https://github.com/HiSeax/dsh-agent-outputs-reader) — agent 产出文件的浮层阅读器：Markdown 渲染、PDF 面板预览、DOCX/XLSX/PPTX 文本提取与回复末尾文件 chips，支持搜索、大纲与位置记忆。
 - [huangfuren/dsh-outline](https://github.com/huangfuren/dsh-outline) — 在 DSH 对话中搜索、读取并安全读写用户自己的 Outline 知识库文档，写操作受白名单保护与审批约束。
 - [huangxicheng1/blog-manage](https://github.com/huangxicheng1/blog-manage) — 在 DSH 面板里管理 GitHub Pages 博客：按标签分组浏览 Markdown 文章，用表单填 front matter 并在分屏编辑器里修改，再通过 GitHub REST API 把改动作为一次 commit 发布。
@@ -6881,7 +6881,7 @@ dsh plugin --profile web add dshmarket
 - [YOYOLnFu/dsh-bili-pond](https://github.com/YOYOLnFu/dsh-bili-pond) — 让蓝色大肥鱼替你刷 B 站：帮你评论，把发现的有趣内容私信给你，还会写下日记；它也有记忆，能长期总结。视频按你的口味筛选并生成 Markdown 日报，也能守着评论区替你回话。开启「圈地自萌」后，它只回视频 UP 主本人主动邀请的楼中楼，普通观众喊话不算，绝不自己起新楼；评论、私信、自动运行和守护默认关闭。需 Node 22、DSH 0.1.7-rc.1+、已登录的 B 站账号、模型线路与 Python。
 - [YoyuDev/dsh-ping](https://github.com/YoyuDev/dsh-ping) — Agent 需要你时响铃并弹出桌面通知：阶段完成、请求批准、等待输入、任务完成、出错，五种场景各配不同提示音。
 - [YuMo226/dsh-task-notify](https://github.com/YuMo226/dsh-task-notify) — 任务完成时弹出 Windows 原生系统通知（通知中心横幅）：目标完成或 Agent 结束一轮。
-- [yunfengnobug/dsh-qq-bot](https://github.com/yunfengnobug/dsh-qq-bot) — 把 DSH 会话接到 QQ（OneBot/NapCat）的插件（fork 自 sj244/dsh-qq-bridge，MIT）。白名单默认全关；被 @、叫到昵称或被戳一定叫醒，其余消息按可调概率抽样。Cordis 插件 id 仍是 qq-bridge。
+- [yunfengnobug/dsh-qq-bot](https://github.com/yunfengnobug/dsh-qq-bot) — 把 DSH 会话接到 QQ（OneBot/NapCat）的插件（fork 自 sj244/dsh-qq-bridge，MIT）。白名单默认全关；被 @、叫到昵称或被戳一定叫醒，其余消息按可调概率抽样。Cordis 插件 id 仍是 qq-bridge。它沿用上游的 Cordis id（qq-bridge）：安装前须先卸载 sj244/dsh-qq-bridge，两者不能同装；白名单为空时谁都不会被叫醒。
 - [YUsaltyfish/dsh-notification-sound](https://github.com/YUsaltyfish/dsh-notification-sound) — 弹出选项卡提问时、请求工具权限时、一轮对话结束时，各播放一次提示音；支持自定义音频文件夹；另附 fish_beep 工具，可随时手动响一声。
 - [Yuuyuko-uu/dsh-qq-bridge](https://github.com/Yuuyuko-uu/dsh-qq-bridge) — 通过 NapCat HTTP 把 DSH 会话和 QQ 双向打通：AI 说完自动发到 QQ，你在 QQ 里说的话自动转进会话。
 - [yxiaoy6/dsh-taskbar-alert](https://github.com/yxiaoy6/dsh-taskbar-alert) — Windows 上审批、提问或方案确认在等你、或一轮回复完成时，让 DeepSeek Harness 的任务栏按钮闪动。
@@ -7259,7 +7259,7 @@ dsh plugin --profile web add dshmarket
 - [SaiSenBox/dsh-boot-guard](https://github.com/SaiSenBox/dsh-boot-guard) — 独立于常规客户端插件加载链的 DSH Web 启动救援工具，可定位疑似故障插件、临时跳过，并且只恢复 Boot Guard 写入的配置。
 - [sakikoTGW/dsh-plugin-resolver](https://github.com/sakikoTGW/dsh-plugin-resolver) — 面向 agent 的插件安装器：解析 DSH 兼容版本、处理同名歧义，并在安装后校验 loader 入口。
 - [SakuraYH1080/dsh-quick-restart](https://github.com/SakuraYH1080/dsh-quick-restart) — 在 DSH 桌面端账号菜单中新增“快速重启”入口，一键退出并重新打开 DSH。仅 Windows 桌面端。
-- [seally-web/dsh-matlab-runner](https://github.com/seally-web/dsh-matlab-runner) — 侧栏里的 MATLAB IDE：类 VS Code 的 .m 编辑器，背后是常驻 MATLAB 会话（单次运行 12-84 毫秒，figure 真的会弹窗），可查看并编辑的实时工作区变量、.mlx 预览、多文件夹挂载，以及给 agent 用的 matlab_run 工具。
+- [seally-web/dsh-matlab-runner](https://github.com/seally-web/dsh-matlab-runner) — 侧栏里的 MATLAB IDE：类 VS Code 的 .m 编辑器，背后是常驻 MATLAB 会话（首次启动约 6–9 秒，默认 session 模式下单次运行 12–84 毫秒，figure 真的会弹窗），可查看并编辑的实时工作区变量、.mlx 预览、多文件夹挂载，以及给 agent 用的 matlab_run 工具。需要本机安装 MATLAB。
 - [sgzeng/pbfuzz#dsh-kanalyzer](https://github.com/sgzeng/pbfuzz/tree/master/packages/dsh-kanalyzer) — LLVM 静态分析插件，可为 C/C++ 项目构建整程序 LLVM bitcode，并在其上运行 kernel-analyzer（KAMain）可达性分析，向智能体提供 kanalyzer_* 工具，并向其他插件提供 ctx.kanalyzer 服务。
 - [shiinakaze/dsh-plugin-backup](https://github.com/shiinakaze/dsh-plugin-backup) — 按分类备份 DSH 的设置、技能、插件、会话与存储，生成可校验、可恢复、可下载的归档，并支持 GitHub 同步。
 - [shinjiyu/deepseek-harness-evolver](https://github.com/shinjiyu/deepseek-harness-evolver) — 补充官方创造模式：把内存里试过的小工具插件校验、经 ctx.plugin 热挂、打分后固化到盘上或回滚。

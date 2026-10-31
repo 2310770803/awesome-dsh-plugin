@@ -1,5 +1,5 @@
 url: https://github.com/Zcc50/dsh-rebuild
-name: DSH 重修整合包
+name: Zcc50/dsh-rebuild
 category: session
 description:
   en: "One-stop pack for DeepSeek Harness: the workspace frontend plugin itself plus a pack/ installer for the task list, encoding fallback, LSP/audit and vision plugins. Root stays a normal marketplace-installable plugin."
