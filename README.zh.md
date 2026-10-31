@@ -2910,6 +2910,7 @@ dsh plugin --profile web add dshmarket
 - [menghuanshiguang/dsh-frontline](https://github.com/menghuanshiguang/dsh-frontline) — 一条提示词行装两半，各自可单独关闭。身份层：开头、末尾（一切其它分区之后）与运行时快照三处固定同一段自述，并要求把与之冲突的说法当作过时缓存。纪律层：十条规则，每条附一句评审用来判断是否违反的判据——收工前拿出外部证据、改动面等于评审面、正确性来自命名调用点而非时序、一个事实一个家、通过注册的接缝扩展、只在真实边界做运行时校验、失败要响而不是静默跳过、正交的结果分开报告、测试走已交付的入口、答复先给结论且篇幅跟改动走。
 - [menghuanshiguang/dsh-sunder](https://github.com/menghuanshiguang/dsh-sunder) — 用自带的提示词包替换宿主身份块：identity、rules、footer 三个系统提示词分区，full/concise/dev 三档预设，每轮把一张规则卡片作为真实用户消息追加，公告源离线时回退到内置副本，检查 GitHub Releases 并可用命令应用更新，五个 `sunder_*` 工具，设置页里一个只读状态分区。
 - [MengYuil/dsh-ponytail](https://github.com/MengYuil/dsh-ponytail) — ponytail 移植：常驻的「懒惰资深开发者」编码人设，带强度档位与 review、audit、debt、gain、help 技能，适用于 DeepSeek Harness。
+- [moon-lzy/dsh-starpost](https://github.com/moon-lzy/dsh-starpost) — 星邮是给 AI bot 用的社交平台：一个 bot 一个账号，能加好友、建群、发动态评论、逛广场、扔漂流瓶、约一局预约制狼人杀，还带每日聊天额度和重复句式限制。本包是星邮在 DeepSeek Harness 上的客户端：17 个工具覆盖上面这些功能，收到的事件按可配置间隔（默认 120 秒）合并成一条提示注入会话，回复走同一套工具。需要自备星邮账号，首次运行在插件面板里注册。
 - [muretai/muretai-dsh-skill](https://github.com/muretai/muretai-dsh-skill) — 让智能体加入 Muretai 网络：拥有自己的身份，通过邀请相识，与属于其他人的智能体进行签名、端到端加密的通信；来信唤醒后可自行回复。
 - [MycatQieZi/dsh-persona-shaoxin](https://github.com/MycatQieZi/dsh-persona-shaoxin) — 把写在 Markdown 里的人设挂载成系统提示词段落：改 `~/.dsh/persona/*.md` 即可改变回答风格，保存后 150 毫秒自动重载而无需重启，项目级 `.dsh/persona/` 下的同名文件覆盖全局配置。
 - [Najiya5/dsh-fish-reflection](https://github.com/Najiya5/dsh-fish-reflection) — 给 DSH 主会话的人格反思层：每日把对话与视频素材沉淀成 3–7 条分层原则，跟踪精神、健康与账户余额，并保留可审计的成长档案；视频摄入为可选项，需站点 Cookie，抖音解析另需 Edge/Chrome 与 yt-dlp。
@@ -6627,6 +6628,7 @@ dsh plugin --profile web add dshmarket
 - [MaybeMeibeMaybi/dsh-harmonyos-hiboard](https://github.com/MaybeMeibeMaybi/dsh-harmonyos-hiboard) — 把DSH的任务结果，以服务卡片形式推送到华为鸿蒙负一屏。安装后请在插件设置页输入授权码，位置：主页面左上角「插件」→ 「dsh-harmonyos-hiboard」。
 - [Meltllsy/dsh-session-attention](https://github.com/Meltllsy/dsh-session-attention) — 跑完 / 提问 / 需要审批时弹桌面通知与提示音（三类可分别开关），另附活动悬浮球，点会话行直接跳回该会话。
 - [MerkurevSergei/dsh-notion-oauth-ui](https://github.com/MerkurevSergei/dsh-notion-oauth-ui) — 在图形界面中以 OAuth 2.0 + PKCE 连接 Notion —— 官方 Notion MCP，无需集成令牌。
+- [Mi-liu/dsh-desktop-notifier](https://github.com/Mi-liu/dsh-desktop-notifier) — 仅支持 Windows 的 DeepSeek Harness 宿主插件：在桌面右下角弹卡片——回合完成或出错时弹通知卡，ask_user_question 变成可点选的选择卡（点选项即作答）；卡片配色跟随当前 Harness 主题，提示音与「始终通知 / 仅在未聚焦时通知」可在 Harness 设置页里配置。
 - [michaelcode-wang/dsh-wecom](https://github.com/michaelcode-wang/dsh-wecom) — 企业微信智能机器人桥接：aibot WebSocket 双向对话（bot_id + secret），无需公网回调。
 - [MichengAI/dsh-im-connect](https://github.com/MichengAI/dsh-im-connect) — 把微信、企业微信、钉钉、飞书、Lark、QQ、Telegram 接到本机 DeepSeek Harness，每个 IM 聊天对应一条独立工作区频道。
 - [miiaowuwu/dsh-sound-lab](https://github.com/miiaowuwu/dsh-sound-lab) — DSH 声音工坊：在会话结束、弹出选项、请求许可与停止时播放指定音效，支持 AI 角色语音生成与音效库管理。
